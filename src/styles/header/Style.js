@@ -23,7 +23,7 @@ export const Wrapper = styled.div`
     flex-direction: row;
     justify-content: space-between;
     padding: 10px 15px;
-    height: auto;
+    height: 64px;
     border-bottom: 1px solid #c1c1c1;
     width: 100%;
   }
@@ -37,6 +37,7 @@ export const Logo = styled.div`
   width: 100%;
   @media screen and (max-width: 768px) {
     max-width: 120px; /* Adjust for smaller screens */
+    justify-content: flex-start;
   }
 `;
 
@@ -71,6 +72,8 @@ export const MenuItems = styled.li`
 
   @media (max-width: 768px) {
     border-bottom: 1px solid #c1c1c17a;
+    display: flex;
+    width: 100%;
   }
 
   a {
@@ -184,7 +187,7 @@ export const MobileMenu = styled.div`
   background-color: ${({ theme }) =>
     theme === "light" ? "#ffffff" : "#001730"};
   position: absolute;
-  top: 65px;
+  top: 64px;
   left: 0;
   width: 100%;
   padding: 20px 0;
