@@ -9,8 +9,7 @@ export const Container = styled.section`
   padding: 128px 0px;
   margin: 8rem auto;
   box-sizing: border-box;
- background: ${(props) => (props.theme === 'dark' ? '#121212' : '#f6f6f6')};
-
+  background: ${(props) => (props.theme === "dark" ? "#121212" : "#f6f6f6")};
 
   @media (max-width: 1024px) {
     padding: 80px 20px;
@@ -64,7 +63,7 @@ export const Top = styled.div`
 export const H2 = styled.h2`
   font-size: 36px;
   /* color: #000; */
-    color: ${(props) => (props.theme === 'dark' ? '#ededee' : '#000')};
+  color: ${(props) => (props.theme === "dark" ? "#ededee" : "#000")};
 
   @media (max-width: 1024px) {
     font-size: 30px;
@@ -81,7 +80,7 @@ export const H2 = styled.h2`
 
 export const Text = styled.p`
   font-size: 16px;
-  color: ${(props) => (props.theme === 'dark' ? '#a1a1aa' : '#454545')};
+  color: ${(props) => (props.theme === "dark" ? "#a1a1aa" : "#454545")};
   box-sizing: border-box;
   @media (max-width: 768px) {
     font-size: 14px;
@@ -112,18 +111,19 @@ export const Bottom = styled.div`
 `;
 
 export const Box = styled.div`
-    max-width: 400px;
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0rem;
-    transition: 0.3s ease all;
-    background-color: ${(props) => (props.theme === 'dark' ? '#18181b' : 'transparent')};
-    border-radius: 12px;
-    padding: 25px 20px;
-    height: auto;
-    box-sizing: border-box;
+  max-width: 400px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0rem;
+  transition: 0.3s ease all;
+  background-color: ${(props) =>
+    props.theme === "dark" ? "#18181b" : "transparent"};
+  border-radius: 12px;
+  padding: 25px 20px;
+  height: auto;
+  box-sizing: border-box;
 
   @media (max-width: 1024px) {
     max-width: 350px;
@@ -149,6 +149,7 @@ export const Box = styled.div`
 
 export const Figure = styled.figure`
   max-width: 400px;
+  max-height: 332px;
   width: 100%;
   height: auto;
   margin: 0px;
@@ -188,7 +189,7 @@ export const Image = styled.img`
 
 export const H4 = styled.h4`
   font-size: 20px;
-  color: ${(props) => (props.theme === 'dark' ? '#ecedee' : '#000')};
+  color: ${(props) => (props.theme === "dark" ? "#ecedee" : "#000")};
 
   padding-top: 8px;
   margin: 0px;
@@ -204,7 +205,7 @@ export const H4 = styled.h4`
 
 export const Strong = styled.strong`
   font-size: 16px;
-  color: ${(props) => (props.theme === 'dark' ? '#a1a1aa' : '#000')};
+  color: ${(props) => (props.theme === "dark" ? "#a1a1aa" : "#000")};
 
   font-weight: 600;
   padding-bottom: 10px;
@@ -222,7 +223,7 @@ export const Strong = styled.strong`
 export const Paper = styled.span`
   font-size: 14px;
   /* color: #5c5c5c; */
-  color: ${(props) => (props.theme === 'dark' ? '#a1a1aa' : '#5c5c5c')};
+  color: ${(props) => (props.theme === "dark" ? "#a1a1aa" : "#5c5c5c")};
 
   @media (max-width: 768px) {
     font-size: 12px;

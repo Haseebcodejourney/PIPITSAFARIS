@@ -6,7 +6,7 @@ export const Container = styled.section`
     linear-gradient(to top, #194b73, rgba(0, 0, 0, 0)), /* Gradient background */
     url('https://static.cloudsafaris.com/public/Elephants-Crater.jpg?action=get'); /* Image background */
   background-attachment: fixed;
-  min-height: 801px;
+  min-height: 580px;
   display: flex;
   justify-content: center;
   align-items: center;

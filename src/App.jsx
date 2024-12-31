@@ -14,6 +14,8 @@ import TripsPage from "./pages/TripsPage";
 import Header from "./components/Header";
 import { lightTheme, darkTheme } from "./theme";
 import ScrollToTop from "./components/ScrollToTop";
+import EmptyPage from "./pages/EmptyPage";
+import HotelsPage from "./pages/HotelsPage";
 
 function App() {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark"); // Get theme from localStorage or default to dark
@@ -42,9 +44,14 @@ function App() {
           <Route path="/privacy" element={<PrivacyPage theme={theme} />} />
           <Route path="/terms" element={<TermsPage theme={theme} />} />
           <Route path="/find-trip" element={<FindTripPage theme={theme} />} />
-          <Route path="/affiliates" element={<AffiliatesPage theme={theme} />} />
+          <Route
+            path="/affiliates"
+            element={<AffiliatesPage theme={theme} />}
+          />
           <Route path="/blog" element={<BlogPage theme={theme} />} />
           <Route path="/trips" element={<TripsPage theme={theme} />} />
+          <Route path="/hotels" element={<HotelsPage theme={theme} />} />
+          <Route path="/hotels" element={<EmptyPage theme={theme} />} />
         </Routes>
         <Footer theme={theme} />
       </Router>

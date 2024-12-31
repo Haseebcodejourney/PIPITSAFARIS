@@ -13,8 +13,11 @@ import {
   Top,
   Wrapper,
 } from "../../styles/about/Team";
+import Image1 from "../../assets/photo-6.jpg";
+import Image2 from "../../assets/photo-2.jpg";
+import Image3 from "../../assets/photo-5.jpg";
 
-function Team({theme}) {
+function Team({ theme }) {
   return (
     <>
       <Container theme={theme}>
@@ -32,44 +35,35 @@ function Team({theme}) {
           <Bottom theme={theme}>
             <Box theme={theme}>
               <Figure>
-                <Image
-                  src="https://static.cloudsafaris.com/public/JD2-CWP-2557.jpg?action=get"
-                  alt="CEO"
-                  width={320}
-                  hright={400}
-                />
+                <Image src={Image1} alt="CEO" width={320} hright={400} />
               </Figure>
-              <H4 theme={theme}>Josh D'Souza</H4>
+              <H4 theme={theme}>Happy Dominick Sanguya </H4>
               <Strong theme={theme}>CEO</Strong>
-              <Paper theme={theme}>A graduate from the University of Waterloo...</Paper>
+              <Paper theme={theme}>
+                A graduate from the University of Waterloo...
+              </Paper>
             </Box>
 
             <Box theme={theme}>
               <Figure>
-                <Image
-                  src="https://static.cloudsafaris.com/public/JD2-CWP-2557.jpg?action=get"
-                  alt="CEO"
-                  width={320}
-                  hright={400}
-                />
+                <Image src={Image2} alt="CEO" width={320} hright={400} />
               </Figure>
-              <H4 theme={theme}>Josh D'Souza</H4>
+              <H4 theme={theme}>Jackson Dominick Sanguya</H4>
               <Strong theme={theme}>CEO</Strong>
-              <Paper theme={theme}>A graduate from the University of Waterloo...</Paper>
+              <Paper theme={theme}>
+                A graduate from the University of Waterloo...
+              </Paper>
             </Box>
 
             <Box theme={theme}>
               <Figure>
-                <Image
-                  src="https://static.cloudsafaris.com/public/JD2-CWP-2557.jpg?action=get"
-                  alt="CEO"
-                  width={320}
-                  hright={400}
-                />
+                <Image src={Image3} alt="CEO" width={320} hright={400} />
               </Figure>
               <H4 theme={theme}>Josh D'Souza</H4>
-              <Strong theme={theme}>CEO</Strong>
-              <Paper theme={theme}>A graduate from the University of Waterloo...</Paper>
+              <Strong theme={theme}>Tour Guide </Strong>
+              <Paper theme={theme}>
+                A graduate from the University of Waterloo...
+              </Paper>
             </Box>
           </Bottom>
         </Wrapper>

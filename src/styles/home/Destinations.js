@@ -7,11 +7,10 @@ export const Container = styled.section`
   margin: 0 auto 0px auto;
   margin-top: 6rem;
   margin-bottom: 8rem;
-  @media screen and (max-width: 767px){
+  @media screen and (max-width: 767px) {
     padding-left: 24px;
     padding-right: 24px;
   }
-  
 `;
 
 export const H2 = styled.h2`
@@ -27,7 +26,7 @@ export const BoxWrapper = styled.div`
 `;
 
 export const Box = styled.div`
- display: flex;
+  display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: flex-end;
@@ -37,13 +36,12 @@ export const Box = styled.div`
   color: #fff;
   border-radius: 1rem;
   position: relative;
-  @media screen and (max-width: 767px){
+  @media screen and (max-width: 767px) {
     max-width: 90%;
     width: 100%;
     max-height: 357px;
     min-height: 357px;
   }
-
 `;
 
 export const Figure = styled.figure`
@@ -52,7 +50,7 @@ export const Figure = styled.figure`
   height: 438px;
   position: absolute;
   z-index: -1;
-  @media screen and (max-width: 767px){
+  @media screen and (max-width: 767px) {
     max-width: 100%;
     width: 100%;
     max-height: 357px;
@@ -67,7 +65,7 @@ export const Image = styled.img`
   display: block;
   object-fit: cover;
   position: relative;
-  
+
   /* Overlay effect */
   &::after {
     content: "";
@@ -95,24 +93,23 @@ export const Image = styled.img`
   }
 `;
 
-
 export const Strong = styled.strong`
-    font-size: 1.5rem;
-    line-height: 2rem;
-    z-index: 9;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  z-index: 9;
 `;
 
 export const Paper = styled.span`
-    font-size: .75rem;
-    line-height: 1rem;
-    z-index: 9;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  z-index: 9;
 `;
 
 export const Text = styled.p`
-    font-size: .875rem;
-    line-height: 1.25rem;
-    padding-top: .5rem;
-    z-index: 9;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding-top: 0.5rem;
+  z-index: 9;
 `;
 
 export const List = styled.ul`
@@ -138,54 +135,49 @@ export const ListItems = styled.li`
 
 export const Wrapper = styled.div``;
 export const PriceWrapper = styled.div`
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 12px;
-     
-
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 12px;
 `;
 
 export const Price = styled.div`
-display: flex;
-align-items: center;
-gap: .25rem;
-font-size: 12px;
-
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 12px;
 `;
 
 export const Div = styled.div`
-    padding: 0px 24px 24px 24px;
-    display: flex;
-    flex-direction: column;
-    padding-top: 300px;
-    position: relative;
-    border-radius: 15px; /* Add border-radius for rounded corners */
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Box shadow effect */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
-    
-    @media screen and (max-width: 767px) {
-        padding-top: 240px;
-    }
+  padding: 0px 24px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 300px;
+  position: relative;
+  border-radius: 15px; /* Add border-radius for rounded corners */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Box shadow effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
 
-    /* Overlay with gradient color and opacity */
-    &::before {
-        content: ''; /* Required for the pseudo-element */
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: linear-gradient(to bottom, rgba(25, 75, 115, 0.8), rgba(25, 75, 115, 0)); /* Gradient overlay */
-        opacity: 0.6; /* Slight opacity */
-        z-index: -1; /* Position the overlay behind the content */
-        border-radius: 15px; /* Match border radius for overlay */
-    }
+  @media screen and (max-width: 767px) {
+    padding-top: 240px;
+  }
 
- 
+  /* Overlay with gradient color and opacity */
+  &::before {
+    content: ""; /* Required for the pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(25, 75, 115, 0.8),
+      rgba(25, 75, 115, 0)
+    ); /* Gradient overlay */
+    opacity: 0.6; /* Slight opacity */
+    z-index: -1; /* Position the overlay behind the content */
+    border-radius: 15px; /* Match border radius for overlay */
+  }
 `;
-
-
-
-

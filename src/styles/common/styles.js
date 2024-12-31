@@ -1,6 +1,5 @@
 // Import styled-components
-import styled from 'styled-components';
-
+import styled from "styled-components";
 
 // Define a reusable container component
 export const Container = styled.div`
@@ -14,24 +13,30 @@ export const Container = styled.div`
 
 // Define a heading component
 export const H1 = styled.h1`
-  font-size: ${props => props.fontSize || '100px'};  // Default size is 100px if no prop is provided
-  color: ${props => props.color || '#fff'};  // Default color is white if no prop is provided
+  font-size: ${(props) =>
+    props.fontSize || "100px"}; // Default size is 100px if no prop is provided
+  color: ${(props) =>
+    props.color || "#fff"}; // Default color is white if no prop is provided
   padding: 0px;
   margin: 0px;
 `;
 
 export const H2 = styled.h2`
-  font-size: ${props => props.fontSize || '100px'};  // Default size is 100px if no prop is provided
-  color: ${(props) => (props.theme === 'dark' ? '#fff' : '#fff')}; /* Light text for dark mode */
+  font-size: ${(props) =>
+    props.fontSize || "100px"}; // Default size is 100px if no prop is provided
+  color: ${(props) =>
+    props.theme === "dark" ? "#fff" : "#fff"}; /* Light text for dark mode */
   padding: 0px;
   margin: 0px;
-  line-height:0.99;
+  line-height: 0.99;
   font-family: "Nunito", serif;
 `;
 
 export const H3 = styled.h3`
-  font-size: ${props => props.fontSize || '14px'};  // Default size is 100px if no prop is provided
-  color: ${props => props.color || '#5c5c5c'};  // Default color is white if no prop is provided
+  font-size: ${(props) =>
+    props.fontSize || "14px"}; // Default size is 100px if no prop is provided
+  color: ${(props) =>
+    props.color || "#5c5c5c"}; // Default color is white if no prop is provided
   padding: 0px;
   margin: 0px 0px 24px 0px;
 `;
@@ -39,13 +44,15 @@ export const H3 = styled.h3`
 export const H4 = styled.h4`
   max-width: 1240px;
   width: 100%;
-  font-size: ${(props) => props.fontSize || '2rem'}; /* Default font size */
-  color: ${(props) => props.color || 'black'}; /* Default color */
+  font-size: ${(props) => props.fontSize || "2rem"}; /* Default font size */
+  color: ${(props) => props.color || "black"}; /* Default color */
 `;
 
 export const P = styled.p`
-  font-size: ${props => props.fontSize || '16px'};  // Default size is 16px if no prop is provided
-  color: ${props => props.color || '#5c5c5c'};  // Default color is black if no prop is provided
+  font-size: ${(props) =>
+    props.fontSize || "16px"}; // Default size is 16px if no prop is provided
+  color: ${(props) =>
+    props.color || "#5c5c5c"}; // Default color is black if no prop is provided
   padding: 0px;
   margin: 0px;
 `;
@@ -79,27 +86,31 @@ export const Direction = styled.a`
 
 // Define a reusable button component
 export const Button = styled.button`
-  background-color: ${(props) => 
-    props.variant === 'primary' ? '#FFEA00' : 
-    props.variant === 'secondary' ? '#008CBA' : '#f44336'};
-    color: ${(props) => props.variant === 'primary' ? '#212121' : 'black'};
-    padding: 12px 24px;
-    font-size: 14px;
-    border: ${(props) => (props.variant === 'primary' ? 'none' : '2px solid #ddd')};
-    border-radius: 999px;
-    cursor: pointer;
-    transition: background-color 0.3s, border 0.3s;
-    border: 1px solid transparent;
-    &:hover{
-      color: #ffffffe6;
-      background-color: #000;
-      border: 1px solid #ffffffe6;
-    }
-    display: flex;
-    align-items: center;
-    gap: 3px;
-    svg{
-      width: 12px;
-      height: 12px;
-    }
+  background-color: ${(props) =>
+    props.variant === "primary"
+      ? "#ff5b00"
+      : props.variant === "secondary"
+      ? "#008CBA"
+      : "#f44336"};
+  color: ${(props) => (props.variant === "primary" ? "#212121" : "black")};
+  padding: 12px 24px;
+  font-size: 14px;
+  border: ${(props) =>
+    props.variant === "primary" ? "none" : "2px solid #ddd"};
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.3s, border 0.3s;
+  border: 1px solid transparent;
+  &:hover {
+    color: #ffffffe6;
+    background-color: #000;
+    border: 1px solid #ffffffe6;
+  }
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  svg {
+    width: 12px;
+    height: 12px;
+  }
 `;

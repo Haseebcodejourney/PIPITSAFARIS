@@ -31,20 +31,17 @@ export const Left = styled.div`
 
 export const H2 = styled.h2`
   font-size: 24px;
-  color: ${(props) => (props.theme === 'dark' ? '#ecedee' : '#f6f6f6')};
-
+  color: ${(props) => (props.theme === "dark" ? "#ecedee" : "#f6f6f6")};
 `;
 
 export const H3 = styled.h3`
   font-size: 18px;
-  color: ${(props) => (props.theme === 'dark' ? '#ecedee' : '#f6f6f6')};
-
+  color: ${(props) => (props.theme === "dark" ? "#ecedee" : "#f6f6f6")};
 `;
 
 export const Text = styled.p`
   font-size: 16px;
-  color: ${(props) => (props.theme === 'dark' ? '#a1a1aa' : '#454545')};
-
+  color: ${(props) => (props.theme === "dark" ? "#a1a1aa" : "#454545")};
 `;
 
 export const List = styled.ul`
@@ -57,8 +54,7 @@ export const List = styled.ul`
 
 export const ListItems = styled.li`
   font-size: 16px;
-  color: ${(props) => (props.theme === 'dark' ? '#a1a1aa' : '#454545')};
-
+  color: ${(props) => (props.theme === "dark" ? "#a1a1aa" : "#454545")};
 `;
 
 export const Right = styled.div`
@@ -69,7 +65,7 @@ export const Right = styled.div`
 `;
 
 export const Strong = styled.strong`
- color: ${(props) => (props.theme === 'dark' ? '#ecedee' : '#454545')};
+  color: ${(props) => (props.theme === "dark" ? "#ecedee" : "#454545")};
 `;
 
 export const Button = styled.button`
@@ -86,11 +82,12 @@ export const Button = styled.button`
   gap: 0.5rem;
   margin-top: 0.25rem;
 
-  /* background-color: #FFEA00; */
-  background-color: ${(props) => (props.theme === 'dark' ? '#FFEA00' : '#FFEA00')};
-  color: ${(props) => (props.theme === 'dark' ? '#212121' : '#212121')};
-    transition: background-color 0.3s, border 0.3s;
-    border: 1px solid transparent;
+  /* background-color: #ff5b00 ; */
+  background-color: ${(props) =>
+    props.theme === "dark" ? "#ff5b00 " : "#ff5b00 "};
+  color: ${(props) => (props.theme === "dark" ? "#212121" : "#212121")};
+  transition: background-color 0.3s, border 0.3s;
+  border: 1px solid transparent;
   svg {
     width: 7px;
     height: 12px;

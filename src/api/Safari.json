@@ -1,69 +1,68 @@
 [
-    {
-      "imageSrc": "https://static.cloudsafaris.com/public/f3bed1be-5dbc-499a-b1f8-b584bd40bda5_crispin-jones-DDEBAl7ULAo-unsplash.jpg?action=get&host=true&width=800",
-      "title": "Kilimanjaro 6 Day Machame Route",
-      "location": "8 days Tanzania",
-      "operator": "Operated by Various suppliers",
-      "description": "Embark on an exhilarating 6-day journey...",
-      "highlights": ["Wildlife", "Photography", "Family"],
-      "price": 1973,
-      "currency": "USD",
-      "priceDescription": "Per Person"
-    },
-    {
-        "imageSrc": "https://static.cloudsafaris.com/public/f3bed1be-5dbc-499a-b1f8-b584bd40bda5_crispin-jones-DDEBAl7ULAo-unsplash.jpg?action=get&host=true&width=800",
-        "title": "Kilimanjaro 6 Day Machame Route",
-        "location": "8 days Tanzania",
-        "operator": "Operated by Various suppliers",
-        "description": "Embark on an exhilarating 6-day journey...",
-        "highlights": ["Wildlife", "Photography", "Family"],
-        "price": 1973,
-        "currency": "USD",
-        "priceDescription": "Per Person"
-      },
-      {
-        "imageSrc": "https://static.cloudsafaris.com/public/f3bed1be-5dbc-499a-b1f8-b584bd40bda5_crispin-jones-DDEBAl7ULAo-unsplash.jpg?action=get&host=true&width=800",
-        "title": "Kilimanjaro 6 Day Machame Route",
-        "location": "8 days Tanzania",
-        "operator": "Operated by Various suppliers",
-        "description": "Embark on an exhilarating 6-day journey...",
-        "highlights": ["Wildlife", "Photography", "Family"],
-        "price": 1973,
-        "currency": "USD",
-        "priceDescription": "Per Person"
-      },
-      {
-        "imageSrc": "https://static.cloudsafaris.com/public/f3bed1be-5dbc-499a-b1f8-b584bd40bda5_crispin-jones-DDEBAl7ULAo-unsplash.jpg?action=get&host=true&width=800",
-        "title": "Kilimanjaro 6 Day Machame Route",
-        "location": "8 days Tanzania",
-        "operator": "Operated by Various suppliers",
-        "description": "Embark on an exhilarating 6-day journey...",
-        "highlights": ["Wildlife", "Photography", "Family"],
-        "price": 1973,
-        "currency": "USD",
-        "priceDescription": "Per Person"
-      },
-      {
-        "imageSrc": "https://static.cloudsafaris.com/public/f3bed1be-5dbc-499a-b1f8-b584bd40bda5_crispin-jones-DDEBAl7ULAo-unsplash.jpg?action=get&host=true&width=800",
-        "title": "Kilimanjaro 6 Day Machame Route",
-        "location": "8 days Tanzania",
-        "operator": "Operated by Various suppliers",
-        "description": "Embark on an exhilarating 6-day journey...",
-        "highlights": ["Wildlife", "Photography", "Family"],
-        "price": 1973,
-        "currency": "USD",
-        "priceDescription": "Per Person"
-      },
-    {
-      "imageSrc": "https://static.cloudsafaris.com/public/f3bed1be-5dbc-499a-b1f8-b584bd40bda5_crispin-jones-DDEBAl7ULAo-unsplash.jpg?action=get&host=true&width=800",
-      "title": "Serengeti Safari Adventure",
-      "location": "7 days Tanzania",
-      "operator": "Operated by ABC Safaris",
-      "description": "Explore the wildlife of Serengeti...",
-      "highlights": ["Safari", "Photography", "Birdwatching"],
-      "price": 1500,
-      "currency": "USD",
-      "priceDescription": "Per Person"
-    }
-  ]
-  
+  {
+    "imageSrc": "https://static.cloudsafaris.com/public/f3bed1be-5dbc-499a-b1f8-b584bd40bda5_crispin-jones-DDEBAl7ULAo-unsplash.jpg?action=get&host=true&width=800",
+    "title": "Kilimanjaro 6 Day Machame Route",
+    "location": "8 days Tanzania",
+    "operator": "Operated by Various suppliers",
+    "description": "Embark on an exhilarating 6-day journey...",
+    "highlights": ["Wildlife", "Photography", "Family"],
+    "price": 1973,
+    "currency": "USD",
+    "priceDescription": "Per Person"
+  },
+  {
+    "imageSrc": "https://static.cloudsafaris.com/public/c0d3542f-1a1e-492a-bc4f-5eb2711ed4cb_kilimanjaro.jpeg?action=get&host=true&width=800",
+    "title": "Kilimanjaro 6 Day Machame Route",
+    "location": "7 days Tanzania",
+    "operator": "Operated by Various suppliers",
+    "description": "Join a 5-day guided trek on the Marangu Route to Mount Kilimanjaro, featuring stunning views and comfortable sleeping huts.",
+    "highlights": ["Wildlife", "Photography", "Family"],
+    "price": 1973,
+    "currency": "USD",
+    "priceDescription": "Per Person"
+  },
+  {
+    "imageSrc": "https://static.cloudsafaris.com/public/f4844a4f-2117-4b0d-a969-238d4c48c54a_kili-1.jpeg?action=get&host=true&width=800",
+    "title": "Kilimanjaro 6 Day Machame Route",
+    "location": "8 days Tanzania",
+    "operator": "Operated by Various suppliers",
+    "description": "Embark on an exhilarating 6-day journey, enjoying stunning landscapes and diverse ecosystems, culminating at Kilimanjaro's breathtaking summit.",
+    "highlights": ["Wildlife", "Photography", "Family"],
+    "price": 1973,
+    "currency": "USD",
+    "priceDescription": "Per Person"
+  },
+  {
+    "imageSrc": "https://static.cloudsafaris.com/public/f44de044-54ed-48ea-be6b-09a7e15ee000_acb9abb6-ecb0-4018-a2d5-1f6d471ad544_PXL_20210116_062648574.PORTRAIT~2.jpg?action=get&host=true&width=800",
+    "title": "Kilimanjaro 6 Day Machame Route",
+    "location": "8 days Tanzania",
+    "operator": "Operated by Various suppliers",
+    "description": "In 6 days, view Tanzania's renowned parks and wildlife like lions, elephants, giraffes, and cheetahs.",
+    "highlights": ["Wildlife", "Photography", "Family"],
+    "price": 1973,
+    "currency": "USD",
+    "priceDescription": "Per Person"
+  },
+  {
+    "imageSrc": "https://static.cloudsafaris.com/public/cad56d61-6aee-4e0e-b044-c2cbea9d1e16_ng-crater-2.jpeg?action=get&host=true&width=800",
+    "title": "Kilimanjaro 6 Day Machame Route",
+    "location": "8 days Tanzania",
+    "operator": "Operated by Various suppliers",
+    "description": "Experience Tanzania’s vibrant wildlife, including lions, elephants, and flamingos, on a 7-day safari through Tarangire, Lake Manyara, Ngorongoro, and the Serengeti.",
+    "highlights": ["Wildlife", "Photography", "Family"],
+    "price": 1973,
+    "currency": "USD",
+    "priceDescription": "Per Person"
+  },
+  {
+    "imageSrc": "https://static.cloudsafaris.com/public/38c52b78-7e32-4026-9ce2-dab8049c8239_hu-chen-60XLoOgwkfA-unsplash%202.jpg?action=get&host=true&width=800",
+    "title": "Serengeti Safari Adventure",
+    "location": "7 days Tanzania",
+    "operator": "Operated by ABC Safaris",
+    "description": "Explore the wildlife of Serengeti...",
+    "highlights": ["Safari", "Photography", "Birdwatching"],
+    "price": 1500,
+    "currency": "USD",
+    "priceDescription": "Per Person"
+  }
+]

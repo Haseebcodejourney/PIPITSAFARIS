@@ -8,22 +8,24 @@ import {
   Right,
   Text,
   List,
-  Strong
+  Strong,
 } from "../../styles/privacy/Style";
 import { Button } from "../../styles/common/styles";
 
-function Privacy({theme}) {
+function Privacy({ theme }) {
   return (
     <>
       <Container theme={theme}>
         <Left theme={theme}>
           <H2 theme={theme}>Privacy Policy</H2>
-          <Text theme={theme}>Last updated: February 18, 2023</Text>
+          <Text theme={theme}>Last updated: December 20, 2024</Text>
+
           <Text theme={theme}>
-            This Privacy Policy describes Our policies and procedures on the
-            collection, use and disclosure of Your information when You use the
-            Service and tells You about Your privacy rights and how the law
-            protects You.
+            At Pipit Safari, we specialize in crafting extraordinary safari
+            experiences that bring you closer to Africa’s breathtaking
+            landscapes, diverse wildlife, and vibrant cultures. With a passion
+            for adventure and a commitment to excellence, we have been
+            transforming dreams into unforgettable journeys since [2017].
           </Text>
           <Text theme={theme}>
             We use Your Personal data to provide and improve the Service. By
@@ -62,7 +64,9 @@ function Privacy({theme}) {
               device or any other device by a website, containing the details of
               Your browsing history on that website among its many uses.
             </ListItems>
-            <ListItems theme={theme}>Country refers to: Delaware, United States</ListItems>
+            <ListItems theme={theme}>
+              Country refers to: Delaware, United States
+            </ListItems>
             <ListItems theme={theme}>
               Device means any device that can access the Service such as a
               computer, a cellphone or a digital tablet.
@@ -70,7 +74,7 @@ function Privacy({theme}) {
             <ListItems theme={theme}>
               Personal Data is any information that relates to an identified or
               identifiable individual.
-            </ListItems >
+            </ListItems>
             <ListItems theme={theme}>Service refers to the Website.</ListItems>
             <ListItems theme={theme}>
               Service Provider means any natural or legal person who processes
@@ -176,7 +180,7 @@ function Privacy({theme}) {
             below:
           </Text>
           <ListItems theme={theme}>
-            <Strong  theme={theme}>Necessary / Essential Cookies</Strong>
+            <Strong theme={theme}>Necessary / Essential Cookies</Strong>
           </ListItems>
           <Text theme={theme}>Type: Session Cookies</Text>
           <Text>Administered by: Us</Text>
@@ -189,7 +193,9 @@ function Privacy({theme}) {
             provide You with those services.
           </Text>
           <ListItems theme={theme}>
-            <Strong theme={theme}>Cookies Policy / Notice Acceptance Cookies</Strong>
+            <Strong theme={theme}>
+              Cookies Policy / Notice Acceptance Cookies
+            </Strong>
           </ListItems>
           <Text theme={theme}>Type: Persistent Cookies</Text>
           <Text theme={theme}>Administered by: Us</Text>
@@ -390,14 +396,21 @@ function Privacy({theme}) {
           </Text>
           <Text theme={theme}>
             By email:{" "}
-            <a href="mailto:hello@cloudsafaris.com" style={{color:'#a1a1aa'}}>hello@cloudsafaris.com</a>
+            <a
+              href="mailto:hello@cloudsafaris.com"
+              style={{ color: "#a1a1aa" }}
+            >
+              hello@cloudsafaris.com
+            </a>
           </Text>
         </Left>
 
         <Right theme={theme}>
           <H3 theme={theme}>Still have questions for us?</H3>
-          <Text theme={theme}>Our team has answers and would love to help.</Text>
-          <Button variant="primary" style={{width: '200px'}}>
+          <Text theme={theme}>
+            Our team has answers and would love to help.
+          </Text>
+          <Button variant="primary" style={{ width: "200px" }}>
             Contact Us
             <svg
               aria-hidden="true"

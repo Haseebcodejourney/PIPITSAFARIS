@@ -1,0 +1,59 @@
+{
+    "hotels": [
+      {
+        "id": 1,
+        "name": "Hotel Millennium Central Downtown",
+        "location": "Dubai",
+        "rating": 8.7,
+        "price": "55, 99 €",
+        "image": "https://y.cdrst.com/foto/hotel-sf/153e0/listcardd/millennium-central-downtown-exterior-1257d667.jpg",
+        "stars": 4
+      },
+      {
+        "id": 2,
+        "name": "Burj Al Arab Jumeirah",
+        "location": "Dubai",
+        "rating": 9.3,
+        "price": "1200, 00 €",
+        "image": "https://x.cdrst.com/foto/hotel-sf/19c05/listcardd/days-inn-wetherby-exterior-122b1ee5.jpg",
+        "stars": 5
+      },
+      {
+        "id": 3,
+        "name": "The Ritz-Carlton Abu Dhabi",
+        "location": "Abu Dhabi",
+        "rating": 9.0,
+        "price": "300, 50 €",
+        "image": "https://x.cdrst.com/foto/hotel-sf/2ca1/listcardd/holiday-inn-bangkok-silom-an-ihg-hotel-general-11f98d1a.jpg",
+        "stars": 5
+      },
+      {
+        "id": 4,
+        "name": "Jumeirah Beach Hotel",
+        "location": "Dubai",
+        "rating": 8.5,
+        "price": "400, 00 €",
+        "image": "https://x.cdrst.com/foto/hotel-sf/10131/listcardd/movenpick-grand-al-bustan-dubai-servicios-12687932.jpg",
+        "stars": 4
+      },
+      {
+        "id": 5,
+        "name": "Jumeirah Beach Hotel",
+        "location": "Dubai",
+        "rating": 8.5,
+        "price": "400, 00 €",
+        "image": "https://x.cdrst.com/foto/hotel-sf/b6716/listcardd/toyoko-inn-marseille-saint-charles-zonasnobles-12849661.jpg",
+        "stars": 4
+      },
+      {
+        "id": 6,
+        "name": "Jumeirah Beach Hotel",
+        "location": "Dubai",
+        "rating": 8.5,
+        "price": "400, 00 €",
+        "image": "https://y.cdrst.com/foto/hotel-sf/1fd4/listcardd/the-orleans-hotel-casino-servicios-12567fd1.jpg",
+        "stars": 4
+      }
+    ]
+  }
+  

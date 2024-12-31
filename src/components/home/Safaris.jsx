@@ -18,8 +18,9 @@ import {
   Strong,
   Text,
 } from "../../styles/home/Safaris";
+import { Link } from "react-router-dom";
 
-function Safaris({theme}) {
+function Safaris({ theme }) {
   const [tourData, setTourData] = useState(Data);
 
   if (!tourData) {
@@ -77,14 +78,28 @@ function Safaris({theme}) {
                     height={364}
                   />
                 </Figure>
-                <Strong className='inner-head' theme={theme}>{tour.title}</Strong>
-                <Paper theme={theme}>{tour.location}</Paper>
+                <Strong
+                  className="main-heading"
+                  theme={theme}
+                  style={{ marginBottom: "10px" }}
+                >
+                  <Link to="#" style={{ color: "unset", marginBottom: "5px" }}>
+                    {tour.title}
+                  </Link>
+                </Strong>
+                <Paper theme={theme} style={{ marginTop: "5px" }}>
+                  {tour.location}
+                </Paper>
                 <Text theme={theme}>{tour.operator}</Text>
-                <Text className="text-main" theme={theme}>{tour.description}</Text>
+                <Text className="text-main" theme={theme}>
+                  {tour.description}
+                </Text>
                 <List theme={theme}>
                   {tour.highlights && tour.highlights.length > 0 ? (
                     tour.highlights.map((highlight, index) => (
-                      <ListItems key={index} theme={theme}>{highlight}</ListItems>
+                      <ListItems key={index} theme={theme}>
+                        {highlight}
+                      </ListItems>
                     ))
                   ) : (
                     <Text theme={theme}>No highlights available</Text>

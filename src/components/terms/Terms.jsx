@@ -8,117 +8,77 @@ import {
   Text,
   List,
   Strong,
-  H4
+  H4,
 } from "../../styles/terms/Style.js";
 import { Button } from "../../styles/common/styles.js";
 
-function Terms({theme}) {
+function Terms({ theme }) {
   return (
     <>
       <Container theme={theme}>
         <Left theme={theme}>
           <H2 theme={theme}>Terms of Service</H2>
           <Strong theme={theme}>
-            Section 25 of these Terms contains an arbitration agreement and
-            class action waiver that apply to all claims brought against
-            CloudSafaris in Canada. Please read them carefully.
+            The Tourism Act No. 29 of 2008 of Tanzania includes an arbitration
+            agreement and class action waiver applicable to all claims brought
+            against PipitSafaris Tanzania. Please read them carefully.
           </Strong>
           <Text theme={theme}>
-            These Terms of Service (“Terms”) are a binding legal agreement
-            between you and CloudSafari Inc. (CloudSafaris Canada) that govern
-            your right to use the websites, applications, and other offerings
-            from CloudSafari Inc. (collectively, the “CloudSafaris Platform”).
-            When used in these Terms, “CloudSafaris,” “we,” “us,” or “our”
-            refers to CloudSafari Inc. with whom you are contracting.
+            These Terms of Service ("Terms") form a binding agreement between
+            you and PipitSafaris Tanzania ("PipitSafaris"). They govern your use
+            of the PipitSafaris Platform, including the website, applications,
+            and services.
           </Text>
           <Text theme={theme}>
-            The CloudSafaris Platform offers an online venue that enables users
-            (“Members”) to publish, offer, search for, and book services.
-            Members who publish and offer services are “Tour Operators.” Members
-            who search for, book, or use services are “Guests.” CloudSafari Inc.
-            offers accommodations (“Accommodations”), activities, excursions,
-            events (“Experiences”), safaris (“Safaris”), and a variety of travel
-            and other services (collectively, “Tour Operator Services,” and each
-            Tour Operator Service offering, a “Listing”). You must register an
-            account to access and use many features of the CloudSafaris
-            Platform, and must keep your account information accurate. As the
-            provider of the CloudSafaris Platform, CloudSafaris does not own,
-            control, offer or manage any Listings, Tour Operator Services, or
-            safari services. CloudSafaris is not a party to the contracts
-            entered into directly between Tour Operators and Guests, nor is
-            CloudSafaris a real-estate broker, or insurer. CloudSafaris is not
-            acting as an agent in any capacity for any Member, except as
-            specified in the Payments Terms of Service (“Payment Terms”).
+            PipitSafaris Tanzania offers a platform for Members to publish,
+            offer, search for, and book services. Tour Operators publish and
+            offer services; Guests search and book services. PipitSafaris is not
+            the owner or manager of Listings or services and is not a party to
+            contracts between Guests and Tour Operators, nor is it an agent,
+            except as outlined in the Payment Terms.
           </Text>
           <Text theme={theme}>
-            We maintain other policies that supplement these Terms like our
-            Privacy Policy, which describes our collection and use of personal
-            data, and our Booking Terms, which govern any payment services
-            provided to Members by the CloudSafaris entity (collectively
-            "CloudSafaris Payments"). If you are a Tour Operator, Guide, or
-            Accommodation Tour Operator, you are responsible for understanding
-            and complying with all laws, rules, regulations and contracts with
-            third parties that apply to your Tour Operator Services.
+            We maintain supplementary policies such as the Privacy Policy and
+            Booking Terms that govern payment services provided by PipitSafaris
+            Tanzania.
           </Text>
           <H2 theme={theme}>1. Our Mission.</H2>
           <Text theme={theme}>
-            Our mission is to create a world where you can travel with
-            simplicity and ease. From safaris to mountain climbing, to relaxing
-            on a beach, browse through many travel options to find the ones that
-            fit the way you like to travel and explore. Learn more about travel
-            options by reviewing the description, blog posts, pictures, Tour
-            Operator profiles, and Guest reviews. If you have questions, just
-            message the Tour Operator or us at hello@cloudsafaris.com.
+            Our Mission is to deliver personalized safari experiences while
+            promoting conservation and supporting local communities.
           </Text>
-          <h2 theme={theme}>Client Terms</h2>
-          <H3 theme={theme}>2. Searching, Booking and Cancellations on CloudSafaris.</H3>
+          {/*<h2 theme={theme}>Client Terms</h2>*/}
+          <H3 theme={theme}>
+            2. Searching, Booking and Cancellations on PipitSafaris.
+          </H3>
           <Text theme={theme}>
-            You can search for Safari Services by using criteria like the travel
-            destination, accommodation type, travel dates, and number of guests.
-            You can also use filters to refine your search results. Search
-            results are based on their relevance to your search and other
-            criteria. Relevance considers factors like price, availability,
-            Reviews, customer service and cancellation history, popularity,
-            previous trips and saved Listings, Tour Operator requirements (e.g.
-            minimum age requirement), and more.
+            Searching & Booking: You can search for Safari Services based on
+            destination, accommodation type, dates, etc. Once you book, you
+            agree to pay the total price, which includes the service price,
+            fees, taxes, and other applicable charges.
           </Text>
           <Text theme={theme}>
-            Our aim is to provide exactly the right travel arrangements to suit
-            your requirements.
+            Deposit: A 30% deposit is required, excluding air travel and
+            non-refundable permits. An additional deposit may apply during peak
+            periods. This deposit covers PipitSafaris Tanzania's costs and may
+            be forfeited in case of cancellation.
           </Text>
           <Text theme={theme}>
-            When you book a safari service, you are agreeing to pay all charges
-            for your booking including the Safari service price, applicable
-            fees, CloudSafaris’ service fee, offline fees, taxes, and any other
-            items identified during checkout (collectively, “Total Price”). You
-            are also agreeing that CloudSafaris may charge the Payment Method
-            (as defined in the Payment Terms) used to book the Safari Service in
-            order to collect Damage Claim (as defined in Section 17) amounts.
+            Payment: The final balance is due three months before departure.
+            Full payment is required for bookings made within three months of
+            travel.
           </Text>
           <Text theme={theme}>
-            When you receive the booking confirmation, a contract for Tour
-            Operator Services (a "Reservation") is formed directly between you,
-            the Accommodation(s), Transportation Partners, and the Tour
-            Operator. In addition to these Terms, you will be subject to, and
-            responsible for complying with, all terms of the Reservation,
-            including without limitation, the cancellation policy and any other
-            rules, standards, policies, or requirements identified in the
-            Listing or during checkout that apply to the Reservation.
+            Modifications: Modifications to bookings are subject to supplier
+            fees and other charges incurred by PipitSafaris Tanzania.
           </Text>
           <Text theme={theme}>
-            The deposit required to book your trip is shown on your quotation.
-            The deposit will be 30% of the total trip price, excepting air
-            travel and any permits which need to be paid for in full at time of
-            booking as tickets will be issued immediately and are non-refundable
-            (‘the Deposit’). Occasionally an additional deposit may be requested
-            in order to secure a booking e.g., for peak departure periods (“The
-            Additional Deposit”). The purpose of the Deposit, other than payment
-            to Third Party Suppliers, is to cover costs, disbursements and
-            service fee incurred by CloudSafaris and in the event of any
-            cancellation as provided for herein the Deposit and any Additional
-            Deposit will be forfeited by the Client.
+            Cancellation & Refunds: If you cancel, refunds are based on the
+            cancellation policy of the Tour Operator. If PipitSafaris Tanzania
+            or the Tour Operator cancels, you may be eligible for a full or
+            partial refund depending on the situation.
           </Text>
-          <Text theme={theme}>
+          {/*<Text theme={theme}>
             You must make all payments in full and on time. Failure to make a
             payment may result in the cancellation of your travel and the
             forfeiture of your Deposit and any Additional Deposit. In such a
@@ -149,9 +109,9 @@ function Terms({theme}) {
           </Text>
           <Text theme={theme}>
             It is important for you to check the details on the Confirmation
-            Invoice as soon as you get it. In the event of any discrepancy
-            please contact us immediately at hello@cloudsafaris.com.
-            CloudSafaris will be responsible for making payments to Third Party
+            Invoice as soon as you get it. In the event of any discrepancy,
+            please contact us immediately at hello@pipitsafaris.com.
+            PipitSafaris will be responsible for making payments to Third Party
             Suppliers on confirmed bookings by you on your behalf and remitting
             the booking fee element to the Company.
           </Text>
@@ -189,16 +149,18 @@ function Terms({theme}) {
             additional guest during the booking process.
           </Text>
           <H4 fontSize="15px" theme={theme}>
-            <Strong theme={theme}>2.2.4 Booking Modifications & Amendments.</Strong>
+            <Strong theme={theme}>
+              2.2.4 Booking Modifications & Amendments.
+            </Strong>
           </H4>
           <Text theme={theme}>
             The Company will make every effort to assist you if you wish to
             alter your arrangements. Guests and Tour Operators are responsible
             for any booking modifications they agree to make via the
-            CloudSafaris Platform or direct CloudSafaris customer service to
-            make on their behalf ("Booking Modifications"). If it is possible to
-            make the amendment, it will be subject to any fees charged by our
-            suppliers, together with all communication charges or other expenses
+            PipitSafaris Platform or by directing PipitSafaris customer service
+            to make on their behalf ("Booking Modifications"). If it is possible
+            to make the amendment, it will be subject to any fees charged by our
+            suppliers, along with all communication charges or other expenses
             incurred by the Company as a result of the change.
           </Text>
           <H4 fontSize="15px" theme={theme}>
@@ -210,24 +172,32 @@ function Terms({theme}) {
           <Text theme={theme}>
             In general, if as a Guest you cancel a Reservation, the amount
             refunded to you is determined by the cancellation policy (as
-            determined by CloudSafaris and the Tour Operator) that applies to
-            that Reservation. But, in certain situations, other policies take
-            precedence and determine what amount is refunded to you. If the Tour
-            Operator cancels, or you experience a Travel Issue (as defined in
-            our Guest Refund Policy), you may be eligible for rebooking
-            assistance or a partial or full refund pending the circumstance as
-            evaluated by CloudSafaris
+            determined by PipitSafaris and the Tour Operator) that applies to
+            that Reservation. However, in certain situations, other policies
+            take precedence and determine what amount is refunded to you. If the
+            Tour Operator cancels, or you experience a Travel Issue (as defined
+            in our Guest Refund Policy), you may be eligible for rebooking
+            assistance or a partial or full refund, depending on the
+            circumstances as evaluated by PipitSafaris.
           </Text>
           <Text theme={theme}>
             All cancellations are subject to the Supplier Terms and Conditions
             of the Third Party Suppliers. Some Third Party Suppliers may choose
-            to offer future travel credits in lieu of a cash refund. We
-            CloudSafaris are not liable for a Third Party Supplier’s failure to
+            to offer future travel credits in lieu of a cash refund. We,
+            PipitSafaris, are not liable for a Third Party Supplier’s failure to
             provide a refund or for Third Party Supplier insolvency or
             bankruptcy.
-          </Text>
-          <H3 theme={theme}>3. Your Responsibilities and Assumption of Risk.</H3>
+          </Text>*/}
+          <H3 theme={theme}>
+            3. Your Responsibilities and Assumption of Risk.
+          </H3>
           <Text theme={theme}>
+            You are responsible for your actions and those of anyone you bring
+            to any service. This includes leaving accommodations in good
+            condition and covering any damage caused. You are also responsible
+            for ensuring the safety and supervision of minors you bring along.
+          </Text>
+          {/* <Text theme={theme}>
             You are responsible and liable for your own acts and omissions and
             are also responsible for the acts and omissions of anyone you invite
             to join or provide access to any Accommodation, Experience,
@@ -239,7 +209,7 @@ function Terms({theme}) {
             your pet(s) cause to an Accommodation, and (iii) you must act with
             integrity, treat others with respect, and comply with applicable
             laws at all times. If you are booking for an additional guest who is
-            a minor or if you bring a minor to a Accommodation, Tour Operator,
+            a minor or if you bring a minor to an Accommodation, Tour Operator,
             or Transportation Partner, you must be legally authorized to act on
             behalf of the minor and you are solely responsible for the
             supervision of that minor.
@@ -256,42 +226,22 @@ function Terms({theme}) {
             your pet(s) cause to an Accommodation, and (iii) you must act with
             integrity, treat others with respect, and comply with applicable
             laws at all times. If you are booking for an additional guest who is
-            a minor or if you bring a minor to a Accommodation, Tour Operator,
+            a minor or if you bring a minor to an Accommodation, Tour Operator,
             or Transportation Partner, you must be legally authorized to act on
             behalf of the minor and you are solely responsible for the
             supervision of that minor.
-          </Text>
-          <Text theme={theme}>
-            You are responsible and liable for your own acts and omissions and
-            are also responsible for the acts and omissions of anyone you invite
-            to join or provide access to any Accommodation, Experience,
-            Transportation, or other Tour Operator Service. For example, this
-            means: (i) you are responsible for leaving an Accommodation (and
-            related personal property) in the condition it was in when you
-            arrived, (ii) you are responsible for paying all reasonable Damage
-            Claim amounts necessary to cover damage that you, your guest(s), or
-            your pet(s) cause to an Accommodation, and (iii) you must act with
-            integrity, treat others with respect, and comply with applicable
-            laws at all times. If you are booking for an additional guest who is
-            a minor or if you bring a minor to a Accommodation, Tour Operator,
-            or Transportation Partner, you must be legally authorized to act on
-            behalf of the minor and you are solely responsible for the
-            supervision of that minor.
-          </Text>
+          </Text>*/}
 
           <List theme={theme}>
+            <ListItems theme={theme}>Entire Agreement.</ListItems>
             <ListItems theme={theme}>
-              Account means a unique account created for You to access our
-              Service or parts of our Service.
+              The Terms (including all communications, bookings, indemnities,
+              and Privacy Policy) represent the full agreement between you and
+              PipitSafaris Tanzania. No other terms apply unless explicitly
+              stated. PipitSafaris Tanzania reserves the right to update these
+              Terms periodically, with revisions posted on the website.
             </ListItems>
-            <ListItems theme={theme}>
-              Affiliate means an entity that controls, is controlled by or is
-              under common control with a party, where "control" means ownership
-              of 50% or more of the shares, equity interest or other securities
-              entitled to vote for election of directors or other managing
-              authority.
-            </ListItems>
-            <ListItems theme={theme}>
+            {/*} <ListItems theme={theme}>
               Company (referred to as either "the Company", "We", "Us" or "Our"
               in this Agreement) refers to CloudSafari Inc., 651 N Broad St,
               Suite 201, Middletown, DE 19709.
@@ -301,46 +251,44 @@ function Terms({theme}) {
               device or any other device by a website, containing the details of
               Your browsing history on that website among its many uses.
             </ListItems>
-            <ListItems theme={theme}>Country refers to: Delaware, United States</ListItems>
+            {/*<ListItems theme={theme}>
+              Country refers to: Delaware, United States
+            </ListItems>*/}
             <ListItems theme={theme}>
               Device means any device that can access the Service such as a
               computer, a cellphone or a digital tablet.
             </ListItems>
+            <ListItems theme={theme}>Governing Law</ListItems>
+
             <ListItems theme={theme}>
-              Personal Data is any information that relates to an identified or
-              identifiable individual.
-            </ListItems>
-            <ListItems theme={theme}>Service refers to the Website.</ListItems>
-            <ListItems theme={theme}>
-              Service Provider means any natural or legal person who processes
-              the data on behalf of the Company. It refers to third-party
-              companies or individuals employed by the Company to facilitate the
-              Service, to provide the Service on behalf of the Company, to
-              perform services related to the Service or to assist the Company
-              in analyzing how the Service is used.
+              These Terms shall be governed by and construed in accordance with
+              the Tourism Act No. 29 of 2008 of Tanzania. Any disputes arising
+              out of or in connection with these Terms shall be subject to the
+              exclusive jurisdiction of the courts of Tanzania.
             </ListItems>
           </List>
-          <H3 theme={theme}>The Entire Contact</H3>
+          {/* <H3 theme={theme}>The Entire Contact</H3>
           <Text theme={theme}>
-            The Conditions (together with all enquiries, advice, quotations, or
-            estimates addressed to, provided by or bookings made, and
-            indemnities signed and the Company's Privacy Policy) constitute
-            collectively the entire terms of the relationship between the
-            parties. There exist no other terms, conditions, warranties,
-            representations, guarantees, promises, undertaking or inducements of
-            any nature whatsoever regulating the relationship and the Client
-            acknowledges that he/she has not relied on any matter or thing
-            stated or presented on behalf of the Company or otherwise that is
-            not included herein. The contra proferentem rule will not apply to
-            the interpretation of the Conditions. The Company reserves the right
-            to revise these conditions from time to time - each revision will be
+            The Conditions (along with all inquiries, advice, quotations,
+            estimates provided to or by the Company, bookings made, indemnities
+            signed, and the Company's Privacy Policy) collectively represent the
+            full terms of the relationship between the parties. No other terms,
+            conditions, warranties, representations, guarantees, promises, or
+            inducements of any kind govern the relationship, and the Client
+            acknowledges that they have not relied on any statements or
+            representations made by the Company or others that are not expressly
+            included here. The contra proferentem rule will not apply to the
+            interpretation of these Conditions. The Company reserves the right
+            to amend these conditions periodically, with each revision being
             dated and posted on its website.
-          </Text>
+          </Text>*/}
         </Left>
 
         <Right theme={theme}>
           <Strong theme={theme}>Still have questions for us?</Strong>
-          <Text theme={theme}>Our team has answers and would love to help.</Text>
+          <Text theme={theme}>
+            Our team has answers and would love to help.
+          </Text>
           <Button variant="primary">
             Contact Us
             <svg
@@ -359,8 +307,10 @@ function Terms({theme}) {
               ></path>
             </svg>
           </Button>
-          <H3 style={{ paddingTop: "16px" }} theme={theme}>Corporations Canada</H3>
-          <Text theme={theme}>
+          <H3 style={{ paddingTop: "16px" }} theme={theme}>
+            Corporations Tanzania
+          </H3>
+          {/* <Text theme={theme}>
             TICO Registration #: 50027812 (Retail), 50027813 (Wholesale)
             <br></br>
             Corporation Name: CloudSafari, Inc.<br></br>
@@ -368,7 +318,7 @@ function Terms({theme}) {
             Address: 4230 Sherwoodtowne Blvd, Mississauga, ON L4Z 2G6<br></br>
             Phone: +1 888 859 0890 <br></br>
             Email: <u style={{ fontWeight: "500" }}>hello@cloudsafaris.com</u>
-          </Text>
+          </Text>*/}
         </Right>
       </Container>
     </>

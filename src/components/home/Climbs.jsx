@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Data from "../../api/Safari.json";
+import Data from "../../api/Climbs.json";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -18,8 +18,9 @@ import {
   Strong,
   Text,
 } from "../../styles/home/Safaris";
+import { Link } from "react-router-dom";
 
-function Climbs() {
+function Safaris({ theme }) {
   const [tourData, setTourData] = useState(Data);
 
   if (!tourData) {
@@ -62,13 +63,13 @@ function Climbs() {
   };
 
   return (
-    <Container>
-      <H2>Kilimanjaro climbs</H2>
+    <Container theme={theme}>
+      <H2 theme={theme}>Safaris</H2>
       <BoxWrapper>
         {tourData.length > 0 ? (
           <Slider {...settings}>
             {tourData.map((tour, index) => (
-              <Box key={index}>
+              <Box key={index} theme={theme}>
                 <Figure>
                   <Image
                     src={tour.imageSrc}
@@ -77,36 +78,50 @@ function Climbs() {
                     height={364}
                   />
                 </Figure>
-                <Strong className='inner-heading'>{tour.title}</Strong>
-                <Paper>{tour.location}</Paper>
-                <Text>{tour.operator}</Text>
-                <Text className="text-main">{tour.description}</Text>
-                <List>
+                <Strong
+                  className="main-heading"
+                  theme={theme}
+                  style={{ marginBottom: "10px" }}
+                >
+                  <Link to="#" style={{ color: "unset", marginBottom: "5px" }}>
+                    {tour.title}
+                  </Link>
+                </Strong>
+                <Paper theme={theme} style={{ marginTop: "5px" }}>
+                  {tour.location}
+                </Paper>
+                <Text theme={theme}>{tour.operator}</Text>
+                <Text className="text-main" theme={theme}>
+                  {tour.description}
+                </Text>
+                <List theme={theme}>
                   {tour.highlights && tour.highlights.length > 0 ? (
                     tour.highlights.map((highlight, index) => (
-                      <ListItems key={index}>{highlight}</ListItems>
+                      <ListItems key={index} theme={theme}>
+                        {highlight}
+                      </ListItems>
                     ))
                   ) : (
-                    <Text>No highlights available</Text>
+                    <Text theme={theme}>No highlights available</Text>
                   )}
                 </List>
-                <PriceWrapper>
-                  <Text>Starting at</Text>
-                  <Price>
-                    <Strong>${tour.price}</Strong>
-                    <Strong>{tour.currency}</Strong>
-                    <Paper>{tour.priceDescription}</Paper>
+                <PriceWrapper theme={theme}>
+                  <Text theme={theme}>Starting at</Text>
+                  <Price theme={theme}>
+                    <Strong theme={theme}>${tour.price}</Strong>
+                    <Strong theme={theme}>{tour.currency}</Strong>
+                    <Paper theme={theme}>{tour.priceDescription}</Paper>
                   </Price>
                 </PriceWrapper>
               </Box>
             ))}
           </Slider>
         ) : (
-          <div>No tours available</div>
+          <div theme={theme}>No tours available</div>
         )}
       </BoxWrapper>
     </Container>
   );
 }
 
-export default Climbs;
+export default Safaris;
