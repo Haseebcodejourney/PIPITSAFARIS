@@ -59,7 +59,7 @@ export default function Header({ toggleTheme, theme }) {
             <Link to="/hotels">Hotels & Lodges</Link>
           </MenuItems>
           <MenuItems>
-            <Link to="/hotels">Destinations</Link>
+            <Link to="/destinations">Destinations</Link>
           </MenuItems>
         </MenuList>
 

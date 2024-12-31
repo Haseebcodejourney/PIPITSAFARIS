@@ -105,7 +105,8 @@ export const ListItems = styled.li`
     props.theme === "dark" ? "#c1c1c1" : "#fff"}; /* Softer text in dark mode */
 
   a {
-    color: #006400; /* Dark green links */
+    /* color: #006400; */
+    color: #c1c1c1;
     text-decoration: none;
     padding: 5px 0px;
     margin: 0px;

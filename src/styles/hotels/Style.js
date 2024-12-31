@@ -89,6 +89,16 @@ export const Card = styled.div`
         cursor: pointer;
         box-shadow: -1px 0 20px #251a1a26, 2px 1px 30px #0000001a;
     }
+    .destination-card-inner{
+        height: auto;
+        min-height: unset;
+        width: auto;
+    }
+    @media screen and (max-width: 767px) {
+        max-width: 325px;
+        width: 100%;
+  }
+
 `;
 
 export const Figure = styled.figure`
@@ -108,6 +118,14 @@ export const CardInnerBox = styled.div`
     border-radius: 1.8rem;
     padding: 10px;
     bottom: 20px;
+
+    @media screen and (max-width: 767px) {
+        max-width: 300px;
+    width: 100%;
+    height: auto;
+    /* padding-right: 15px; */
+  }
+
 `;
 
 export const Strong = styled.strong`

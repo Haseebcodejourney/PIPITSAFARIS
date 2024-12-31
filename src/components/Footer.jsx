@@ -120,10 +120,10 @@ export default function Footer({ theme }) {
                 <Link to="/trips">Trips</Link>
               </ListItems>
               <ListItems theme={theme}>
-                <Link to="#">Hotels & Lodges</Link>
+                <Link to="/hotels">Hotels & Lodges</Link>
               </ListItems>
               <ListItems theme={theme}>
-                <Link to="#">Destinations</Link>
+                <Link to="/destinations">Destinations</Link>
               </ListItems>
               <ListItems theme={theme}>
                 <Link to="/affiliates">Affiliates</Link>

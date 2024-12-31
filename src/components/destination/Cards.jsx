@@ -7,7 +7,7 @@ import StarIcon from '@mui/icons-material/Star';
 import data from '../../api/hotels.json';
 import { motion } from 'framer-motion';
 
-export default function Cards({ theme }) {
+export default function Cards({theme}) {
   const [hotels, setHotels] = useState([]);
 
   useEffect(() => {
@@ -22,7 +22,7 @@ export default function Cards({ theme }) {
 
   return (
     <Container theme={theme}>
-      <H2 theme={theme}>Most popular hotels</H2>
+      <H2 theme={theme}>Top destinations</H2>
       <CardWrapper theme={theme}>
         {hotels.map((hotel, index) => (
           <motion.div
@@ -36,12 +36,12 @@ export default function Cards({ theme }) {
               <Figure theme={theme}>
                 <Image src={hotel.image} alt={hotel.name} width={405} height={360} />
               </Figure>
-              <CardInnerBox theme={theme}>
+              <CardInnerBox theme={theme} className='destination-card-inner'>
                 <HeadingWrapper theme={theme}>
                   <Strong theme={theme}>{hotel.name}</Strong>
-                  <Round theme={theme}>{hotel.rating}</Round>
+                  {/* <Round theme={theme}>{hotel.rating}</Round> */}
                 </HeadingWrapper>
-                <RatingWrapper theme={theme}>
+                {/* <RatingWrapper theme={theme}>
                   {Array(hotel.stars || 0)
                     .fill(null)
                     .map((_, starIndex) => (
@@ -51,14 +51,14 @@ export default function Cards({ theme }) {
                         style={{ color: '#ff5b00' }}
                       />
                     ))}
-                </RatingWrapper>
-                <PriceWrapper theme={theme}>
+                </RatingWrapper> */}
+                {/* <PriceWrapper theme={theme}>
                   <Strong theme={theme}>{hotel.location}</Strong>
                   <Div theme={theme}>
                     <Paper theme={theme}>From</Paper>
                     <Strong theme={theme}>{hotel.price}</Strong>
                   </Div>
-                </PriceWrapper>
+                </PriceWrapper> */}
               </CardInnerBox>
             </Card>
           </motion.div>
