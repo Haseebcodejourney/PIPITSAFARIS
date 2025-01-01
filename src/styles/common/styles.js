@@ -92,7 +92,7 @@ export const Button = styled.button`
       : props.variant === "secondary"
       ? "#008CBA"
       : "#f44336"};
-  color: ${(props) => (props.variant === "primary" ? "#212121" : "black")};
+  color: ${(props) => (props.variant === "primary" ? "#fff" : "black")};
   padding: 12px 24px;
   font-size: 14px;
   border: ${(props) =>

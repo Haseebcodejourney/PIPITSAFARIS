@@ -25,8 +25,9 @@ export const HeadingWrapper = styled.div`
     justify-content: space-between;
 `;
 export const H2 = styled.h2`
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     font-size: 24px;
+    padding:4px 0px 0px 0px;
 `;
 
 export const Round = styled.div`
