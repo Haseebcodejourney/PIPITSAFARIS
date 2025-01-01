@@ -121,7 +121,7 @@ function Safaris({ theme }) {
           <div theme={theme}>No tours available</div>
         )}
       </BoxWrapper>
-       <Button variant="primary" style={{marginRight:'0',marginLeft:'auto', color:'#fff', marginTop: '10px'}}>View More</Button>
+       <Link to='/trips'><Button variant="primary" style={{marginRight:'0',marginLeft:'auto', color:'#fff', marginTop: '10px'}}>View More</Button></Link>
     </Container>
   );
 }

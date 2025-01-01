@@ -69,6 +69,7 @@ export const MenuItems = styled.li`
   font-size: 14px;
   transition: 0.3s all;
   border-bottom: 0px solid #c1c1c17a;
+  font-weight: 700;
 
   @media (max-width: 768px) {
     border-bottom: 1px solid #c1c1c17a;
@@ -84,6 +85,7 @@ export const MenuItems = styled.li`
     position: relative;
     overflow: hidden;
     transition: color 0.3s ease;
+    font-weight: 700;
   }
 
   a::after {
@@ -95,11 +97,13 @@ export const MenuItems = styled.li`
     background-color: #ff5b00;
     width: 0;
     transition: width 0.3s ease;
+    font-weight: 700;
   }
 
   a:hover::after {
     width: 100%;
     animation: heartbeat116 1.5s infinite;
+    font-weight: 700;
   }
 
   @keyframes heartbeat116 {
@@ -114,6 +118,7 @@ export const MenuItems = styled.li`
 
   a:hover {
     color: #ff5b00;
+    font-weight: 700;
   }
 `;
 

@@ -31,7 +31,9 @@ export const H2 = styled.h2`
 `;
 
 export const Round = styled.div`
-    background: #ececec94;
+    /* background: #ececec94; */
+    background-color: ${(props) =>
+    props.theme === "dark" ? "#121212 " : "#fff "};
 border-radius: 50%;
 padding: 10px;
 width: 25px;
@@ -39,7 +41,8 @@ height: 25px;
 display: flex;
 align-items: center;
 justify-content: center;
-color: #000;
+/* color: #000; */
+color: ${(props) => (props.theme === "dark" ? "#ecedee" : "#f6f6f6")};
 font-size: 13px;
 
 `;
@@ -114,7 +117,9 @@ export const CardInnerBox = styled.div`
     max-width: 373px;
     width: 100%;
     height: 110px;
-    background: #fff;
+    /* background: #fff; */
+    background-color: ${(props) =>
+    props.theme === "dark" ? "#121212 " : "#fff "} !important;
     position: absolute;
     border-radius: 1.8rem;
     padding: 10px;
