@@ -48,6 +48,7 @@ export const Div = styled.div`
   justify-content: flex-start;
   gap: 3px;
   box-sizing: border-box;
+  
   .inner{
     min-height: 344px;
     max-width: 400px;
@@ -66,7 +67,8 @@ export const Div = styled.div`
     min-height: 344px;
     max-width: 400px;
     width: 100%;
-    background: linear-gradient(to right, #00000080, #00000040);
+    /* background: linear-gradient(to right, #00000080, #00000040); */
+    background: linear-gradient(157deg, #223ce4 25%, #ff182D 90%);
     border-radius: 1rem;
     padding: 24px;
     min-height: 400px;
@@ -82,9 +84,11 @@ export const Div = styled.div`
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
+    /* background: linear-gradient(157deg, #223ce4 25%, #ff182D 90%); */
 
     div {
-      background: linear-gradient(to right, #00000080, #00000040);
+      /* background: linear-gradient(to right, #00000080, #00000040); */
+      background: linear-gradient(157deg, #223ce4 25%, #ff182D 90%);
       padding: 24px;
       border-radius: 1rem;
 
@@ -107,7 +111,8 @@ export const Div = styled.div`
     min-height: 400px;
     max-width: 400px;
     width: 100%;
-    background: linear-gradient(to right, #00000080, #00000040);
+    /* background: linear-gradient(to right, #00000080, #00000040); */
+    background: linear-gradient(157deg, #223ce4 25%, #ff182D 90%);
     border-radius: 1rem;
     padding: 24px;
 
