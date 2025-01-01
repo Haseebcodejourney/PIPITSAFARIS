@@ -29,7 +29,7 @@ export const H2 = styled.h2`
   padding: 0px;
   margin: 0px;
   line-height: 0.99;
-  font-family: "Nunito", serif;
+  /* font-family: "Nunito", serif; */
 `;
 
 export const H3 = styled.h3`

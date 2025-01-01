@@ -9,8 +9,9 @@ export const Container = styled.section`
   
 
   h2 {
-    padding: 48px 0;
-    font-size: 30px;
+    padding: 0;
+    font-size: 36px;
+    margin-bottom: 1.5rem;
     color: ${(props) => (props.theme === 'dark' ? '#fff' : '#212121')};
   }
 
@@ -127,7 +128,7 @@ export const Div = styled.div`
 
 // Paragraph styling
 export const P = styled.p`
-  padding-top: 8px;
+  padding-top: 0px;
   font-size: 16px;
   color: #fff;
   padding-bottom: 2px;
@@ -137,7 +138,7 @@ export const P = styled.p`
 export const Paper = styled.strong`
   font-size: 20px;
   color: #fff;
-  padding-top: 4px;
+  padding-top: 10px;
 `;
 
 // IconWrapper to center and style icons
