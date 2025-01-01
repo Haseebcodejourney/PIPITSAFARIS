@@ -18,6 +18,7 @@ import {
   Strong,
   Text,
 } from "../../styles/home/Safaris";
+import { Button } from "../../styles/common/styles";
 import { Link } from "react-router-dom";
 
 function Safaris({ theme }) {
@@ -120,6 +121,7 @@ function Safaris({ theme }) {
           <div theme={theme}>No tours available</div>
         )}
       </BoxWrapper>
+       <Button variant="primary" style={{marginRight:'0',marginLeft:'auto', color:'#fff', marginTop: '10px'}}>View More</Button>
     </Container>
   );
 }
