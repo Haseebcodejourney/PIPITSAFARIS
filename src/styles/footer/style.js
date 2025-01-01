@@ -15,6 +15,9 @@ export const Wrapper = styled.footer`
       ? "#c1c1c1"
       : "#c1c1c1"}; /* Light text for dark mode */
   border-top: 1px solid #ffffff26;
+  @media screen and (max-width: 767px){
+    padding: 32px 15px;
+  }
 `;
 
 export const Box = styled.div`
@@ -85,9 +88,15 @@ export const LWraper = styled.div`
   width: 100%;
   h3 {
     color: #fff !important;
+    @media screen and (max-width: 767px){
+      margin-bottom: 12px;
+    }
   }
   .heading-footer {
     color: #fff !important;
+  }
+  @media screen and (max-width: 767px){
+    margin-top: 24px;
   }
 `;
 

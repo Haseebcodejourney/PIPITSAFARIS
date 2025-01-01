@@ -199,6 +199,7 @@ export const MobileMenu = styled.div`
   &.open {
     transform: translateY(0);
     opacity: 1;
+    position: sticky;
   }
 
   @media (max-width: 768px) {
