@@ -42,7 +42,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 /* color: #000; */
-color: ${(props) => (props.theme === "dark" ? "#ecedee" : "#f6f6f6")};
+color: ${(props) => (props.theme === "dark" ? "#f6f6f6" : "#f6f6f6")};
 font-size: 13px;
 
 `;
