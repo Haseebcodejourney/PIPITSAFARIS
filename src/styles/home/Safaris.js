@@ -4,16 +4,20 @@ import styled from "styled-components";
 export const Container = styled.section`
   max-width: 1240px;
   width: 100%;
-  margin: 0 auto 0px auto;
-  margin-top: 6rem;
-  margin-bottom: 8rem;
+  margin: 6rem auto 8rem auto; /* Simplified margin */
+  box-sizing: border-box;
+
+  @media screen and (max-width: 1280px) {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
   @media screen and (max-width: 767px) {
-    padding-left: 24px;
-    padding-right: 24px;
-    margin-top: 24px;
+    margin-top: 24px; /* Overwrites top margin for smaller screens */
     margin-bottom: 24px;
   }
 `;
+
 
 // export const H2 = styled.h2`
 //   font-size: 36px;

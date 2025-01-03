@@ -6,6 +6,10 @@ export const Container = styled.section`
   width: 100%;
   margin: 0 auto 72px auto;
   box-sizing: border-box;
+  @media screen and (max-width: 1280px) {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
   
 
   h2 {
@@ -68,11 +72,15 @@ export const Div = styled.div`
     min-height: 344px;
     max-width: 400px;
     width: 100%;
-    /* background: linear-gradient(to right, #00000080, #00000040); */
     background: linear-gradient(157deg, #223ce4 25%, #ff182D 90%);
     border-radius: 1rem;
     padding: 24px;
     min-height: 400px;
+    transition: 0.3s ease all;
+    &:hover{
+      box-shadow: -1px 0 20px #251a1a26, 2px 1px 30px #0000001a !important;
+      background-size: 300%;
+    }
 
     @media (max-width: 767px){
       min-height: 191px;
@@ -85,13 +93,17 @@ export const Div = styled.div`
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
-    /* background: linear-gradient(157deg, #223ce4 25%, #ff182D 90%); */
+    width: 100%;
 
     div {
-      /* background: linear-gradient(to right, #00000080, #00000040); */
       background: linear-gradient(157deg, #223ce4 25%, #ff182D 90%);
       padding: 24px;
       border-radius: 1rem;
+      transition: 0.3s ease all;
+    &:hover{
+      box-shadow: -1px 0 20px #251a1a26, 2px 1px 30px #0000001a !important;
+      background-size: 300%;
+    }
 
 
     }
@@ -112,10 +124,14 @@ export const Div = styled.div`
     min-height: 400px;
     max-width: 400px;
     width: 100%;
-    /* background: linear-gradient(to right, #00000080, #00000040); */
     background: linear-gradient(157deg, #223ce4 25%, #ff182D 90%);
     border-radius: 1rem;
     padding: 24px;
+    transition: 0.3s ease all;
+    &:hover{
+      box-shadow: -1px 0 20px #251a1a26, 2px 1px 30px #0000001a !important;
+      background-size: 300%;
+    }
 
     @media (max-width: 767px){
       min-height: 191px;

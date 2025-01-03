@@ -7,9 +7,13 @@ export const Container = styled.section`
   margin: 0 auto 0px auto;
   margin-top: 6rem;
   margin-bottom: 8rem;
+  @media screen and (max-width: 1280px) {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
   @media screen and (max-width: 767px) {
-    padding-left: 24px;
-    padding-right: 24px;
+
   }
 `;
 

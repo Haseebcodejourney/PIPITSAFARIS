@@ -8,12 +8,14 @@ import Destinations from "../components/home/Destinations";
 export default function HomePage({ theme }) {
   return (
     <>
+    <main>
       <Hero theme={theme} />
       <Safaris theme={theme} />
       <Climbs theme={theme} />
       <Destinations theme={theme} />
       <Booking theme={theme} />
       <ReadySafari theme={theme} />
+      </main>
     </>
   );
 }

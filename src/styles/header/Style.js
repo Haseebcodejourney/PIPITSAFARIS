@@ -31,8 +31,8 @@ export const Wrapper = styled.div`
 
 export const Logo = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   max-width: 150px; /* Responsive width */
   width: 100%;
   @media screen and (max-width: 768px) {

@@ -37,9 +37,9 @@ function Safaris({ theme }) {
     initialSlide: 0,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1224,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1.9,
           slidesToScroll: 2,
           infinite: true,
           dots: false,
@@ -56,13 +56,15 @@ function Safaris({ theme }) {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1.3,
+          slidesToShow: 1.1,
           slidesToScroll: 1,
         },
       },
     ],
   };
-
+  
+  // Add custom CSS for the gap
+  
   return (
     <Container theme={theme}>
       <H2 theme={theme}>Safaris</H2>

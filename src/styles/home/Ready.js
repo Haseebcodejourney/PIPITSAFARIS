@@ -27,6 +27,10 @@ export const Container = styled.section`
         position: relative;
         z-index: 2; // Ensure the content stays above the overlay
     }
+    @media screen and (max-width: 1280px) {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
   @media (max-width: 768px) {
     padding: 0px 24px;
     width: -webkit-fill-available;
