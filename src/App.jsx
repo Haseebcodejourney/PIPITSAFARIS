@@ -17,6 +17,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import EmptyPage from "./pages/EmptyPage";
 import HotelsPage from "./pages/HotelsPage";
 import DestinationPage from "./pages/DestinationPage";
+import '.././src/App.css'
 
 function App() {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark"); // Get theme from localStorage or default to dark

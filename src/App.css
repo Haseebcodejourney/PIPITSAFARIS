@@ -1,3 +1,20 @@
 main{
     box-sizing: border-box;
 }
+.slick-prev, .slick-next{
+    top: -9%;
+    width: 30px;
+    height: 30px;
+    border: 0px;
+}
+.slick-prev:before, .slick-next:before{
+    font-size: 30px;
+    color: rgb(255, 91, 0) !important;
+}
+.slick-next{
+    margin-right: 20px;
+}
+.slick-prev{
+    left: auto;
+    right: 30px;
+}
