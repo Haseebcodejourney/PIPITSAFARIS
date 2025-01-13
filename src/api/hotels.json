@@ -2,56 +2,56 @@
   "hotels": [
     {
       "id": 1,
-      "name": "Arusha",
+      "name": "Planet Lodges",
       "location": "Tanzania",
       "rating": 8.7,
       "price": "55, 99 €",
-      "image": "https://www.siyabona.com/images/arusha-coffee-lodge-restaurant-exterior-590x390.jpg",
+      "image": "https://tanzania-specialist.com/wp-content/uploads/2023/10/Arusha-PL-garden-1960x800.jpeg",
       "stars": 4
     },
     {
       "id": 2,
-      "name": "Burj Al Arab Jumeirah",
-      "location": "Dubai",
+      "name": "Katambuga hotel",
+      "location": "Tanzania",
       "rating": 9.3,
       "price": "1200, 00 €",
-      "image": "https://x.cdrst.com/foto/hotel-sf/19c05/listcardd/days-inn-wetherby-exterior-122b1ee5.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL5S8Jo4CPsXC8hkEZzwnDLmZj_emR6sfGhg&s",
       "stars": 5
     },
     {
       "id": 3,
-      "name": "The Ritz-Carlton Abu Dhabi",
-      "location": "Abu Dhabi",
+      "name": "Maramboi tented lodge",
+      "location": "Tanzania",
       "rating": 9.0,
       "price": "300, 50 €",
-      "image": "https://x.cdrst.com/foto/hotel-sf/2ca1/listcardd/holiday-inn-bangkok-silom-an-ihg-hotel-general-11f98d1a.jpg",
+      "image": "https://twctanzania.com/wp-content/uploads/2023/10/maramboi_-_family_suite_-_aerial-scaled.jpg",
       "stars": 5
     },
     {
       "id": 4,
-      "name": "Jumeirah Beach Hotel",
-      "location": "Dubai",
+      "name": "The castle Ngorongoro",
+      "location": "Tanzania",
       "rating": 8.5,
       "price": "400, 00 €",
-      "image": "https://x.cdrst.com/foto/hotel-sf/10131/listcardd/movenpick-grand-al-bustan-dubai-servicios-12687932.jpg",
+      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/38/cd/39/caption.jpg?w=500&h=400&s=1",
       "stars": 4
     },
     {
       "id": 5,
-      "name": "Jumeirah Beach Hotel",
-      "location": "Dubai",
+      "name": "Ngorongoro farm house",
+      "location": "Tanzania",
       "rating": 8.5,
       "price": "400, 00 €",
-      "image": "https://x.cdrst.com/foto/hotel-sf/b6716/listcardd/toyoko-inn-marseille-saint-charles-zonasnobles-12849661.jpg",
+      "image": "https://www.safariventures.com/wp-content/uploads/a-43.jpg",
       "stars": 4
     },
     {
       "id": 6,
-      "name": "Jumeirah Beach Hotel",
-      "location": "Dubai",
+      "name": "Acacia serengeti ",
+      "location": "Tanzania",
       "rating": 8.5,
       "price": "400, 00 €",
-      "image": "https://y.cdrst.com/foto/hotel-sf/1fd4/listcardd/the-orleans-hotel-casino-servicios-12567fd1.jpg",
+      "image": "https://wetu.com/ImageHandler/c320x200/186025/acacia1321.jpg",
       "stars": 4
     }
   ]

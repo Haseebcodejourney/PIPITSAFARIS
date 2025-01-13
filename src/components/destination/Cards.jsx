@@ -16,15 +16,15 @@ import {
   Paper,
 } from "../../styles/hotels/Style";
 import StarIcon from "@mui/icons-material/Star";
-import data from "../../api/Destinations.json";
+import destinationData from "../../api/Destinations.json"; // Assuming you have a Destinations JSON file for top destinations
 import { motion } from "framer-motion";
 
 export default function Cards({ theme }) {
-  const [hotels, setHotels] = useState([]);
+  const [destinations, setDestinations] = useState([]);
 
   useEffect(() => {
     // Simulate fetching data from a JSON file
-    setHotels(data.hotels || []);
+    setDestinations(destinationData.hotels || []); // Assuming destinations data is structured similarly
   }, []);
 
   const boxVariants = {
@@ -34,9 +34,10 @@ export default function Cards({ theme }) {
 
   return (
     <Container theme={theme}>
+      {/* Top destinations section */}
       <H2 theme={theme}>Top destinations</H2>
       <CardWrapper theme={theme}>
-        {hotels.map((hotel, index) => (
+        {destinations.map((hotel, index) => (
           <motion.div
             key={hotel.id} // Use a unique key (hotel.id) here
             initial="hidden"
@@ -47,7 +48,7 @@ export default function Cards({ theme }) {
             <Card theme={theme}>
               <Figure theme={theme}>
                 <Image
-                  src={hotel.image}
+                  src={hotel.image} // Dynamic image source from JSON
                   alt={hotel.name}
                   width={405}
                   height={360}
@@ -62,33 +63,31 @@ export default function Cards({ theme }) {
                     marginBottom: "20px",
                   }}
                 >
-                  {/* <Strong theme={theme}>{hotel.location}</Strong> */}
+                  {/* Dynamic image for hotel profile */}
                   <Figure>
                     <Image
                       style={{ borderRadius: "1.85rem" }}
-                      src="https://x.cdrst.com/foto/hotel-sf/29b94/square/holiday-inn-express-manila-newport-city-an-ihg-hotel-general-12044774.jpg"
+                      src={hotel.image} // Replace with the hotel's image dynamically
                       width={100}
                       height={100}
                     />
                   </Figure>
-
                   <Div theme={theme} style={{ alignItems: "flex-start" }}>
                     <HeadingWrapper theme={theme}>
                       <Strong theme={theme}>{hotel.name}</Strong>
                       <Round theme={theme}>{hotel.rating}</Round>
                     </HeadingWrapper>
                     <RatingWrapper theme={theme}>
-                      {Array(hotel.stars || 0)
-                        .fill(null)
-                        .map((_, starIndex) => (
+                      {Array.from({ length: hotel.stars || 0 }).map(
+                        (_, starIndex) => (
                           <StarIcon
                             theme={theme}
                             key={starIndex}
                             style={{ color: "#ff5b00" }}
                           />
-                        ))}
+                        )
+                      )}
                     </RatingWrapper>
-                    {/* <Paper theme={theme}>From</Paper> */}
                     <Strong
                       theme={theme}
                       style={{
@@ -97,8 +96,8 @@ export default function Cards({ theme }) {
                         marginTop: "10px",
                       }}
                     >
-                      Remington is a 3 stars budget hotel with apartment at the
-                      Resorts World Manila. Located right…
+                      {/* Dynamic description */}
+                      {hotel.description || "No description available."}
                     </Strong>
                   </Div>
                 </PriceWrapper>

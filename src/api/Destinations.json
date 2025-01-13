@@ -2,57 +2,63 @@
   "hotels": [
     {
       "id": 1,
-      "name": "Hotel Millennium Central Downtown",
-      "location": "Dubai",
+      "name": "Serengeti Moru Kopjes",
+      "location": "Tanzania",
       "rating": 8.7,
       "price": "55, 99 €",
-      "image": "https://y.cdrst.com/foto/hotel-sf/153e0/listcardd/millennium-central-downtown-exterior-1257d667.jpg",
-      "stars": 4
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1hnUb0gfNvVNjfOav-122Z7kDjv3x4g7weqSASTf4GRlLDFD8rr-GUHswKgd6TPJIND0&usqp=CAU",
+      "stars": 4,
+      "description": "A wonderful getaway in the Serengeti."
     },
     {
       "id": 2,
-      "name": "Burj Al Arab Jumeirah",
-      "location": "Dubai",
+      "name": "Ngorongoro Crater",
+      "location": "Tanzania",
       "rating": 9.3,
       "price": "1200, 00 €",
-      "image": "https://x.cdrst.com/foto/hotel-sf/19c05/listcardd/days-inn-wetherby-exterior-122b1ee5.jpg",
-      "stars": 5
+      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEidhkrB-3MPdaZ_d047iTg5xvX8Wb1oWNbShLRiALEJARGNjJLc5QYWxjMw8qQSi3ECxkh5MHqHKqmJN5JBt414SEtsguoa5SS6DXDlGZasHkU5uZKJJHE7wnB-4teH8wcbESUB7llLzskH/s1600/Empakai_Crater_Ngorongoro_Conservation_Area.jpg",
+      "stars": 5,
+      "description": "Experience the beauty of the Ngorongoro Crater."
     },
     {
       "id": 3,
-      "name": "The Ritz-Carlton Abu Dhabi",
-      "location": "Abu Dhabi",
+      "name": "Ndutu",
+      "location": "Tanzania",
       "rating": 9.0,
       "price": "300, 50 €",
-      "image": "https://x.cdrst.com/foto/hotel-sf/2ca1/listcardd/holiday-inn-bangkok-silom-an-ihg-hotel-general-11f98d1a.jpg",
-      "stars": 5
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5fy6hy7Tpv8j0Jk0DY9JcHZgpxA8ydw64fHd_vrhJAkA-I9X_ekIbPaxCuDl8U4T6AYc&usqp=CAU",
+      "stars": 5,
+      "description": "A luxurious retreat in the heart of Ndutu."
     },
     {
       "id": 4,
-      "name": "Jumeirah Beach Hotel",
-      "location": "Dubai",
+      "name": "Lake Manyara National Park",
+      "location": "Tanzania",
       "rating": 8.5,
       "price": "400, 00 €",
-      "image": "https://x.cdrst.com/foto/hotel-sf/10131/listcardd/movenpick-grand-al-bustan-dubai-servicios-12687932.jpg",
-      "stars": 4
+      "image": "https://swalasafaris.com/wp-content/uploads/2017/12/lake_manyara-1.jpg?w=640",
+      "stars": 4,
+      "description": "Explore the beauty of Lake Manyara National Park."
     },
     {
       "id": 5,
-      "name": "Jumeirah Beach Hotel",
-      "location": "Dubai",
+      "name": "Serengeti Central (Seronera)",
+      "location": "Tanzania",
       "rating": 8.5,
       "price": "400, 00 €",
-      "image": "https://x.cdrst.com/foto/hotel-sf/b6716/listcardd/toyoko-inn-marseille-saint-charles-zonasnobles-12849661.jpg",
-      "stars": 4
+      "image": "https://www.tarangirenationalparks.com/wp-content/uploads/2024/03/lion-serengeti-africa-750x450.jpg",
+      "stars": 4,
+      "description": "Stay close to wildlife in Serengeti Central."
     },
     {
       "id": 6,
-      "name": "Hamzaaaaa",
-      "location": "Dubai",
+      "name": "Kogatende Airstrip (KOG)",
+      "location": "Tanzania",
       "rating": 8.5,
       "price": "400, 00 €",
-      "image": "https://y.cdrst.com/foto/hotel-sf/1fd4/listcardd/the-orleans-hotel-casino-servicios-12567fd1.jpg",
-      "stars": 4
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3Yba9Lc2CDYdlWOR2r9rcSYi6hYGfOr5fWGVATyClNI5oznzuYq7CBcrJTCnHOHklTqE&usqp=CAU",
+      "stars": 4,
+      "description": "An airstrip in the heart of Kogatende for travelers."
     }
   ]
 }

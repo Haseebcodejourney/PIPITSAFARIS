@@ -1,11 +1,23 @@
-import React, { useState, useEffect } from 'react';
-import { 
-  Card, CardInnerBox, CardWrapper, Container, Figure, H2, Image, 
-  RatingWrapper, Strong, Round, HeadingWrapper, PriceWrapper, Div, Paper 
-} from '../../styles/hotels/Style';
-import StarIcon from '@mui/icons-material/Star';
-import data from '../../api/hotels.json';
-import { motion } from 'framer-motion';
+import React, { useState, useEffect } from "react";
+import {
+  Card,
+  CardInnerBox,
+  CardWrapper,
+  Container,
+  Figure,
+  H2,
+  Image,
+  RatingWrapper,
+  Strong,
+  Round,
+  HeadingWrapper,
+  PriceWrapper,
+  Div,
+  Paper,
+} from "../../styles/hotels/Style";
+import StarIcon from "@mui/icons-material/Star";
+import data from "../../api/hotels.json";
+import { motion } from "framer-motion";
 
 export default function Cards({ theme }) {
   const [hotels, setHotels] = useState([]);
@@ -26,7 +38,7 @@ export default function Cards({ theme }) {
       <CardWrapper theme={theme}>
         {hotels.map((hotel, index) => (
           <motion.div
-            key={hotel.id} // Use a unique key (hotel.id) here
+            key={hotel.id} // Ensure hotel.id is unique
             initial="hidden"
             animate="visible"
             transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -34,7 +46,12 @@ export default function Cards({ theme }) {
           >
             <Card theme={theme}>
               <Figure theme={theme}>
-                <Image src={hotel.image} alt={hotel.name} width={405} height={360} />
+                <Image
+                  src={hotel.image || "https://via.placeholder.com/405x360"} // Default fallback image
+                  alt={hotel.name}
+                  width={405}
+                  height={360}
+                />
               </Figure>
               <CardInnerBox theme={theme}>
                 <HeadingWrapper theme={theme}>
@@ -42,15 +59,15 @@ export default function Cards({ theme }) {
                   <Round theme={theme}>{hotel.rating}</Round>
                 </HeadingWrapper>
                 <RatingWrapper theme={theme}>
-                  {Array(hotel.stars || 0)
-                    .fill(null)
-                    .map((_, starIndex) => (
+                  {Array.from({ length: hotel.stars || 0 }).map(
+                    (_, starIndex) => (
                       <StarIcon
                         theme={theme}
                         key={starIndex}
-                        style={{ color: '#ff5b00' }}
+                        style={{ color: "#ff5b00" }}
                       />
-                    ))}
+                    )
+                  )}
                 </RatingWrapper>
                 <PriceWrapper theme={theme}>
                   <Strong theme={theme}>{hotel.location}</Strong>
