@@ -4,6 +4,7 @@ import HeroCommon from "../components/HeroCommon";
 import { Components, Div, PageWrapper } from "../styles/DetailPage/About";
 import ChatWithExpert from "../components/VisitDetail/ChatWithExpert";
 import WhenToGo from "../components/VisitDetail/WhenToGo";
+import WhatToDo from "../components/VisitDetail/WhatToDo";
 
 export default function TripDetailPage({ theme }) {
   return (
@@ -17,6 +18,7 @@ export default function TripDetailPage({ theme }) {
         <Components>
           <About />
           <WhenToGo />
+          <WhatToDo />
         </Components>
         <Div>
           <ChatWithExpert />

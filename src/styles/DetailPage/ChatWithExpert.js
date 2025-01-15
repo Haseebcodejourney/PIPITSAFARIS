@@ -8,7 +8,8 @@ export const Box = styled.div`
   border-radius: 0.75rem;
   padding: 24px;
   border: 1px solid #e8e8e8;
-
+  position: sticky;
+  top: 60px;
   @media screen and (max-width: 767px) {
   }
 `;
