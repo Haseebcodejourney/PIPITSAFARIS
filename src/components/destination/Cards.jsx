@@ -18,6 +18,7 @@ import {
 import StarIcon from "@mui/icons-material/Star";
 import destinationData from "../../api/Destinations.json"; // Assuming you have a Destinations JSON file for top destinations
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function Cards({ theme }) {
   const [destinations, setDestinations] = useState([]);
@@ -46,14 +47,16 @@ export default function Cards({ theme }) {
             variants={boxVariants}
           >
             <Card theme={theme}>
-              <Figure theme={theme}>
-                <Image
-                  src={hotel.image} // Dynamic image source from JSON
-                  alt={hotel.name}
-                  width={405}
-                  height={360}
-                />
-              </Figure>
+              <Link to="/details">
+                <Figure theme={theme}>
+                  <Image
+                    src={hotel.image} // Dynamic image source from JSON
+                    alt={hotel.name}
+                    width={405}
+                    height={360}
+                  />
+                </Figure>
+              </Link>
               <CardInnerBox theme={theme} className="destination-card-inner">
                 <PriceWrapper
                   theme={theme}

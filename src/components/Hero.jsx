@@ -1,4 +1,5 @@
 import "../styles/hero/style.css";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -18,7 +19,11 @@ export default function Hero() {
           <div className="hero-detail-wrapper-inner">
             <h1>Live your dream African safari</h1>
             <span>Take the next step in creating lifetime memories</span>
-            <strong>Plan your trip</strong>
+            <strong>
+              <Link style={{ color: "#fff" }} to="/find-trip">
+                Plan your trip
+              </Link>
+            </strong>
           </div>
         </div>
         <div className="selection-wrappper">
