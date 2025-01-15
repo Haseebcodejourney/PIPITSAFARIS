@@ -42,15 +42,31 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 15px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  justify-content: center;
 `;
 
 export const Paper = styled.span`
   color: ${(props) =>
     props.theme === "dark" ? "#121212" : "#001730"}; /* Dark mode background */
   font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
   svg {
     width: 14px;
     height: 14px;
+  }
+  .excellent{
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px -1px rgba(0, 0, 0, .1);
+    border: 1px solid #e8e8e8;
+    background: #4a7454;
+    width: 23px;
+    height: 23px;
+    display: inline-block;
+    border-radius: 50%;
+
   }
 `;
 

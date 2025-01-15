@@ -1,0 +1,18 @@
+{
+    "title": "Wildlife",
+    "description": "The Western Corridor's diverse habitats support an abundant array of wildlife, making it a prime location for witnessing the raw beauty of the African wilderness.",
+    "wildlife": [
+      {
+        "name": "Lion",
+        "image": {
+          "src": "https://static.cloudsafaris.com/public/1e127fe6-45f8-413d-b530-cae6ccb26efa_Lion-sm.png?action=get&host=true",
+          "alt": "Lion",
+          "width": 128,
+          "height": 80
+        },
+        "status": "Common",
+        "statusClass": "common"
+      }
+    ]
+  }
+  

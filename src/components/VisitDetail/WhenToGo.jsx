@@ -27,9 +27,9 @@ function WhenToGo() {
           <ListItems>December</ListItems>
         </List>
         <Wrapper>
-          <Paper>Excellent</Paper>
-          <Paper>Good</Paper>
-          <Paper>Fair</Paper>
+          <Paper><Paper className="excellent"></Paper>Excellent</Paper>
+          <Paper><Paper className="excellent"></Paper>Good</Paper>
+          <Paper><Paper className="excellent"></Paper>Fair</Paper>
         </Wrapper>
       </Box>
     </>

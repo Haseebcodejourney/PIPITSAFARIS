@@ -5,6 +5,9 @@ import { Components, Div, PageWrapper } from "../styles/DetailPage/About";
 import ChatWithExpert from "../components/VisitDetail/ChatWithExpert";
 import WhenToGo from "../components/VisitDetail/WhenToGo";
 import WhatToDo from "../components/VisitDetail/WhatToDo";
+import WideLife from "../components/VisitDetail/WideLife";
+import WhatToKnow from "../components/VisitDetail/WhatToKnow";
+import FAQS from "../components/VisitDetail/FAQS";
 
 export default function TripDetailPage({ theme }) {
   return (
@@ -19,11 +22,14 @@ export default function TripDetailPage({ theme }) {
           <About />
           <WhenToGo />
           <WhatToDo />
+          <WideLife />
+          <WhatToKnow />
         </Components>
         <Div>
           <ChatWithExpert />
         </Div>
       </PageWrapper>
+      <FAQS />
     </>
   );
 }
