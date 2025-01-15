@@ -2,8 +2,10 @@ import styled from "styled-components";
 
 // Wrapper for the component
 export const ComponentWrapper = styled.div`
+    border-top: 1px solid #e5e7eb;
   margin: 30px auto 0 auto;
   padding-bottom: 30px;
+  padding-top: 30px;
   max-width: 1152px;
   width: 100%;
 `;
