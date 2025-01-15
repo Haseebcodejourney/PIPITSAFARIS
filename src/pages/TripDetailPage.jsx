@@ -5,6 +5,7 @@ import { Components, Div, PageWrapper } from "../styles/DetailPage/About";
 import ChatWithExpert from "../components/VisitDetail/ChatWithExpert";
 import WhenToGo from "../components/VisitDetail/WhenToGo";
 import WideLife from "../components/VisitDetail/WideLife";
+import WhatToKnow from "../components/VisitDetail/WhatToKnow";
 
 export default function TripDetailPage({ theme }) {
   return (
@@ -19,6 +20,7 @@ export default function TripDetailPage({ theme }) {
           <About />
           <WhenToGo />
           <WideLife/>
+          <WhatToKnow/>
         </Components>
         <Div>
           <ChatWithExpert />
