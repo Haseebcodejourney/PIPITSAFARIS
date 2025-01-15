@@ -4,6 +4,7 @@ import HeroCommon from "../components/HeroCommon";
 import { Components, Div, PageWrapper } from "../styles/DetailPage/About";
 import ChatWithExpert from "../components/VisitDetail/ChatWithExpert";
 import WhenToGo from "../components/VisitDetail/WhenToGo";
+import WhatToDo from "../components/VisitDetail/WhatToDo";
 import WideLife from "../components/VisitDetail/WideLife";
 import WhatToKnow from "../components/VisitDetail/WhatToKnow";
 import FAQS from "../components/VisitDetail/FAQS";
@@ -20,14 +21,15 @@ export default function TripDetailPage({ theme }) {
         <Components>
           <About />
           <WhenToGo />
-          <WideLife/>
-          <WhatToKnow/>
+          <WhatToDo />
+          <WideLife />
+          <WhatToKnow />
         </Components>
         <Div>
           <ChatWithExpert />
         </Div>
       </PageWrapper>
-      <FAQS/>
+      <FAQS />
     </>
   );
 }
