@@ -6,6 +6,7 @@ import ChatWithExpert from "../components/VisitDetail/ChatWithExpert";
 import WhenToGo from "../components/VisitDetail/WhenToGo";
 import WideLife from "../components/VisitDetail/WideLife";
 import WhatToKnow from "../components/VisitDetail/WhatToKnow";
+import FAQS from "../components/VisitDetail/FAQS";
 
 export default function TripDetailPage({ theme }) {
   return (
@@ -26,6 +27,7 @@ export default function TripDetailPage({ theme }) {
           <ChatWithExpert />
         </Div>
       </PageWrapper>
+      <FAQS/>
     </>
   );
 }
