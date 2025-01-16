@@ -17,7 +17,7 @@ const TripDetailPage = ({ theme }) => {
     setActiveTab(tab);
     const section = document.getElementById(tab);
     if (section) {
-      const offset = 70; // Adjust scroll position to stop 30px before the section
+      const offset = 150; // Adjust scroll position to stop 30px before the section
       const sectionTop = section.getBoundingClientRect().top + window.pageYOffset;
       window.scrollTo({
         top: sectionTop - offset,
