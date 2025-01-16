@@ -9,7 +9,7 @@ export const Box = styled.div`
   padding: 24px;
   border: 1px solid #e8e8e8;
   position: sticky;
-  top: 60px;
+  top: 135px;
   .btn{
     font-size: 16px;
   /* max-width: 216px; */
