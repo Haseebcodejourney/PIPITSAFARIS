@@ -10,6 +10,21 @@ export const Box = styled.div`
   border: 1px solid #e8e8e8;
   position: sticky;
   top: 60px;
+  .btn{
+    font-size: 16px;
+  /* max-width: 216px; */
+  width: 100%;
+  height: 48px;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 0px;
+  margin-top: 10px;
+  margin: 0 auto;
+  cursor: pointer;
+  }
   @media screen and (max-width: 767px) {
   }
 `;
@@ -41,7 +56,7 @@ export const Image = styled.img`
 
 export const Text = styled.p`
   color: ${(props) =>
-    props.theme === "dark" ? "#121212" : "#001730"}; /* Dark mode background */
+    props.theme === "dark" ? "#a1a1aa" : "#001730"}; /* Dark mode background */
   font-size: 16px;
   padding-bottom: 10px;
   @media screen and (max-width: 767px) {

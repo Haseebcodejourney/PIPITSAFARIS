@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 // Wrapper for the component
 export const ComponentWrapper = styled.div`
-  border-bottom: 1px solid #e5e7eb;
+  /* border-bottom: 1px solid #e5e7eb; */
   margin: 30px 0;
   padding-bottom: 30px;
 `;
@@ -23,7 +23,7 @@ export const H3 = styled.h3`
 
 // Text
 export const Text = styled.p`
-  color: ${(props) => (props.theme === "dark" ? "#121212" : "#001730")};
+  color: ${(props) => (props.theme === "dark" ? "#a1a1aa" : "#001730")};
   font-size: 16px;
   margin: 0;
   padding-top: 2px;

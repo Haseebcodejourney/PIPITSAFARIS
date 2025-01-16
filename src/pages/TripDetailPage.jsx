@@ -17,19 +17,19 @@ export default function TripDetailPage({ theme }) {
         heading="We believe in getting you the best trip at the best price. Without making it complicated."
         subText="Coming from a background of 50 years in the safari industry, PIPITSAFARIS is innovating to bring you the best Africa has to offer."
       />
-      <PageWrapper>
-        <Components>
-          <About />
-          <WhenToGo />
-          <WhatToDo />
-          <WideLife />
-          <WhatToKnow />
+      <PageWrapper theme={theme}>
+        <Components theme={theme}>
+          <About theme={theme}/>
+          <WhenToGo theme={theme}/>
+          <WhatToDo theme={theme}/>
+          <WideLife theme={theme}/>
+          <WhatToKnow theme={theme}/>
         </Components>
         <Div>
-          <ChatWithExpert />
+          <ChatWithExpert theme={theme}/>
         </Div>
       </PageWrapper>
-      <FAQS />
+      <FAQS theme={theme}/>
     </>
   );
 }

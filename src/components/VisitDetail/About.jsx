@@ -1,19 +1,19 @@
 import React from "react";
 import {
   Box,
-  Button,
   H2,
   Paper,
   ShowMore,
   Text,
 } from "../../styles/DetailPage/About";
+import {Button} from '../../styles/common/styles';
 
 export default function About({ theme }) {
   return (
     <>
-      <Box>
-        <H2>About Serengeti West (Grumeti)</H2>
-        <Text>
+      <Box theme={theme}>
+        <H2 theme={theme}>About Serengeti West (Grumeti)</H2>
+        <Text theme={theme}>
           The Western Corridor of the Serengeti National Park, extending to the
           Grumeti River, is renowned for its dramatic annual wildebeest
           migration crossings, typically around May and June. This remote region
@@ -21,9 +21,9 @@ export default function About({ theme }) {
           bushland, vast savannas, and riverine forests providing habitat for a
           diverse array ...
         </Text>
-        <ShowMore>
+        <ShowMore theme={theme}>
           Show more
-          <Paper>
+          <Paper theme={theme}>
             <svg
               aria-hidden="true"
               focusable="false"
@@ -41,7 +41,7 @@ export default function About({ theme }) {
             </svg>
           </Paper>
         </ShowMore>
-        <Button>
+        <Button variant="primary" theme={theme} className='btn'>
           View Gallery
           <svg
             aria-hidden="true"

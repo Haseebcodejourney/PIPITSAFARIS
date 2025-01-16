@@ -51,7 +51,7 @@ export default function Faqs({ theme }) {
       <H2 theme={theme}>Frequently Asked Questions</H2>
       <Wrapper theme={theme}>
         {faqData.map((faq, index) => (
-          <div key={index} className="q-wrapper">
+          <div key={index} className="q-wrapper" theme={theme}>
             <Question onClick={() => handleToggle(index)} theme={theme}>
               {faq.question}
               <span>{openFAQ === index ? "-" : "+"}</span> {/* Toggle icon */}

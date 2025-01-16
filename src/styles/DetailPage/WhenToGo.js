@@ -33,9 +33,14 @@ export const ListItems = styled.li`
   padding: 10px; /* Added padding for better appearance */
   margin: 5px; /* Added margin for spacing between items */
   border-radius: 9999px;
-  border-color: #e8e8e8;
-  width: 97px;
+  border-color: none;
+  max-width: 97px;
+  width: 100%;
   text-align: center;
+  @media screen and (max-width: 767px) {
+    max-width: 85px;
+    width: 100%;
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -49,7 +54,7 @@ export const Wrapper = styled.div`
 
 export const Paper = styled.span`
   color: ${(props) =>
-    props.theme === "dark" ? "#121212" : "#001730"}; /* Dark mode background */
+    props.theme === "dark" ? "#a1a1aa" : "#001730"}; /* Dark mode background */
   font-size: 16px;
   display: flex;
   align-items: center;
@@ -60,7 +65,7 @@ export const Paper = styled.span`
   }
   .excellent{
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px -1px rgba(0, 0, 0, .1);
-    border: 1px solid #e8e8e8;
+    border: 0px solid #e8e8e8;
     background: #4a7454;
     width: 23px;
     height: 23px;
