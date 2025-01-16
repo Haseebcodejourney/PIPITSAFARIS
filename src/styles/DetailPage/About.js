@@ -16,6 +16,9 @@ export const Box = styled.div`
     margin-bottom: 30px;
     margin-top: 32px;
     font-size: 16px;
+    @media screen and (max-width: 767px) {
+      max-width: unset;
+    }
   }
   @media screen and (max-width: 767px) {
   }
@@ -137,5 +140,5 @@ export const Div = styled.div`
   max-width: 339px;
   width: 100%;
   position: sticky;
-  top: 60px;
+  top: 134px;
 `;

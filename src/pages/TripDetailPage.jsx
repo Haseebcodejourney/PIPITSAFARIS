@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import About from "../components/VisitDetail/About";
 import HeroCommon from "../components/HeroCommon";
 import { Components, Div, PageWrapper } from "../styles/DetailPage/About";
@@ -12,6 +12,7 @@ import { Tab, TabWrapper, InnerTabWrapper } from "../styles/DetailPage/Tabs";
 
 const TripDetailPage = ({ theme }) => {
   const [activeTab, setActiveTab] = useState("about");
+  const sectionRefs = useRef({}); // To store references to sections
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
@@ -26,6 +27,31 @@ const TripDetailPage = ({ theme }) => {
     }
   };
 
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      rootMargin: "-50% 0px -50% 0px", // Trigger when the section is roughly in the middle of the viewport
+      threshold: 0.1,
+    };
+
+    const observerCallback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveTab(entry.target.id);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    Object.keys(sectionRefs.current).forEach((key) => {
+      const section = sectionRefs.current[key];
+      if (section) observer.observe(section);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <>
       {/* Hero Section */}
@@ -36,97 +62,37 @@ const TripDetailPage = ({ theme }) => {
       />
 
       {/* Tab Navigation */}
-      <TabWrapper>
-      <InnerTabWrapper>
-        <Tab
-          onClick={() => handleTabClick("about")}
-          style={{
-            background: activeTab === "about" ? "#276749" : "#e2e8f0",
-            color: activeTab === "about" ? "#fff" : "#000",
-            padding: "10px 20px",
-            margin: "0 5px",
-            borderRadius: "5px",
-            border: "none",
-            cursor: "pointer",
-          }}
-        >
-          About
-        </Tab>
-        <Tab
-          onClick={() => handleTabClick("when-to-go")}
-          style={{
-            background: activeTab === "when-to-go" ? "#276749" : "#e2e8f0",
-            color: activeTab === "when-to-go" ? "#fff" : "#000",
-            padding: "10px 20px",
-            margin: "0 5px",
-            borderRadius: "5px",
-            border: "none",
-            cursor: "pointer",
-          }}
-        >
-          When to Go
-        </Tab>
-        <Tab
-          onClick={() => handleTabClick("what-to-do")}
-          style={{
-            background: activeTab === "what-to-do" ? "#276749" : "#e2e8f0",
-            color: activeTab === "what-to-do" ? "#fff" : "#000",
-            padding: "10px 20px",
-            margin: "0 5px",
-            borderRadius: "5px",
-            border: "none",
-            cursor: "pointer",
-          }}
-        >
-          What to Do
-        </Tab>
-        <Tab
-          onClick={() => handleTabClick("wide-life")}
-          style={{
-            background: activeTab === "wide-life" ? "#276749" : "#e2e8f0",
-            color: activeTab === "wide-life" ? "#fff" : "#000",
-            padding: "10px 20px",
-            margin: "0 5px",
-            borderRadius: "5px",
-            border: "none",
-            cursor: "pointer",
-          }}
-        >
-          Wildlife
-        </Tab>
-        <Tab
-          onClick={() => handleTabClick("what-to-know")}
-          style={{
-            background: activeTab === "what-to-know" ? "#276749" : "#e2e8f0",
-            color: activeTab === "what-to-know" ? "#fff" : "#000",
-            padding: "10px 20px",
-            margin: "0 5px",
-            borderRadius: "5px",
-            border: "none",
-            cursor: "pointer",
-          }}
-        >
-          What to Know
-        </Tab>
-      </InnerTabWrapper>
+      <TabWrapper theme={theme}>
+        <InnerTabWrapper theme={theme}>
+          {["about", "when-to-go", "what-to-do", "wide-life", "what-to-know"].map((tab) => (
+            <Tab
+              key={tab}
+              active={activeTab === tab}
+              onClick={() => handleTabClick(tab)}
+              theme={theme}
+            >
+              {tab.replace("-", " ").replace(/\b\w/g, (char) => char.toUpperCase())}
+            </Tab>
+          ))}
+        </InnerTabWrapper>
       </TabWrapper>
 
       {/* Main Content Section */}
       <PageWrapper theme={theme}>
         <Components theme={theme}>
-          <div id="about">
+          <div id="about" ref={(el) => (sectionRefs.current["about"] = el)}>
             <About theme={theme} />
           </div>
-          <div id="when-to-go">
+          <div id="when-to-go" ref={(el) => (sectionRefs.current["when-to-go"] = el)}>
             <WhenToGo theme={theme} />
           </div>
-          <div id="what-to-do">
+          <div id="what-to-do" ref={(el) => (sectionRefs.current["what-to-do"] = el)}>
             <WhatToDo theme={theme} />
           </div>
-          <div id="wide-life">
+          <div id="wide-life" ref={(el) => (sectionRefs.current["wide-life"] = el)}>
             <WideLife theme={theme} />
           </div>
-          <div id="what-to-know">
+          <div id="what-to-know" ref={(el) => (sectionRefs.current["what-to-know"] = el)}>
             <WhatToKnow theme={theme} />
           </div>
         </Components>
