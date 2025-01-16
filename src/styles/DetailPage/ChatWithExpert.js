@@ -47,11 +47,13 @@ export const FigureWrapper = styled.div`
 
 export const Figure = styled.figure`
   margin: 0;
+ 
 `;
 
 export const Image = styled.img`
   margin: 0;
   border-radius: 50%;
+  border: 1px solid #c1c1c1;
 `;
 
 export const Text = styled.p`

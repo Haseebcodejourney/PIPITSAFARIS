@@ -35,7 +35,8 @@ width: 100%;
 height: 155px;
 box-shadow: 0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px -1px rgba(0,0,0,.1);
 border-radius: .75rem;
-border-color: #f6f6f6;
+border: 1px solid;
+border-color: ${(props) => (props.theme === 'dark' ? '#c1c1c1' : '#f6f6f6')};
 position: relative;
 @media screen and (max-width: 767px) {
     max-width: 140px;

@@ -9,27 +9,34 @@ import WideLife from "../components/VisitDetail/WideLife";
 import WhatToKnow from "../components/VisitDetail/WhatToKnow";
 import FAQS from "../components/VisitDetail/FAQS";
 
-export default function TripDetailPage({ theme }) {
-  return (
-    <>
-      <HeroCommon
-        theme={theme}
-        heading="We believe in getting you the best trip at the best price. Without making it complicated."
-        subText="Coming from a background of 50 years in the safari industry, PIPITSAFARIS is innovating to bring you the best Africa has to offer."
-      />
-      <PageWrapper theme={theme}>
-        <Components theme={theme}>
-          <About theme={theme}/>
-          <WhenToGo theme={theme}/>
-          <WhatToDo theme={theme}/>
-          <WideLife theme={theme}/>
-          <WhatToKnow theme={theme}/>
-        </Components>
-        <Div>
-          <ChatWithExpert theme={theme}/>
-        </Div>
-      </PageWrapper>
-      <FAQS theme={theme}/>
-    </>
-  );
-}
+const TripDetailPage = ({ theme }) => (
+  <>
+    {/* Hero Section */}
+    <HeroCommon
+      theme={theme}
+      heading="We believe in getting you the best trip at the best price, without making it complicated."
+      subText="With over 50 years of experience in the safari industry, PIPITSAFARIS is here to bring you the best Africa has to offer."
+    />
+
+    {/* Main Content Section */}
+    <PageWrapper theme={theme}>
+      <Components theme={theme}>
+        <About theme={theme} />
+        <WhenToGo theme={theme} />
+        <WhatToDo theme={theme} />
+        <WideLife theme={theme} />
+        <WhatToKnow theme={theme} />
+      </Components>
+
+      {/* Chat With Expert */}
+      <Div>
+        <ChatWithExpert theme={theme} />
+      </Div>
+    </PageWrapper>
+
+    {/* Frequently Asked Questions */}
+    <FAQS theme={theme} />
+  </>
+);
+
+export default TripDetailPage;

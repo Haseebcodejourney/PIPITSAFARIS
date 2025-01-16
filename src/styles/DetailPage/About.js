@@ -4,23 +4,23 @@ import styled from "styled-components";
 
 export const Box = styled.div`
   border-bottom: 1px solid #e5e7eb;
-  .btn{
+  .btn {
     max-width: 216px;
-  width: 100%;
-  height: 48px;
-  border-radius: 0.5rem;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  justify-content: center;
-  margin-bottom: 30px;
-  margin-top: 32px;
-  border: 0px;
-  font-size: 16px;
+    width: 100%;
+    height: 48px;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 32px;
+    font-size: 16px;
   }
   @media screen and (max-width: 767px) {
   }
 `;
+
 export const H2 = styled.h2`
   color: ${(props) =>
     props.theme === "dark" ? "#121212" : "#001730"}; /* Dark mode background */
@@ -36,8 +36,16 @@ export const Text = styled.p`
     props.theme === "dark" ? "#a1a1aa" : "#001730"}; /* Dark mode background */
   font-size: 16px;
   padding-bottom: 10px;
+  transition: color 0.3s ease;
   @media screen and (max-width: 767px) {
   }
+`;
+
+export const ShowMoreWrapper = styled.div`
+  overflow: hidden;
+  max-height: ${(props) => (props.isExpanded ? "300px" : "0")};
+  opacity: ${(props) => (props.isExpanded ? "1" : "0")};
+  transition: max-height 0.5s ease, opacity 0.5s ease;
 `;
 
 export const ShowMore = styled.div`
@@ -48,10 +56,19 @@ export const ShowMore = styled.div`
   display: flex;
   align-items: center;
   gap: 10px;
-  &:hover{
-    cursor: pointer;
-    /* text-decoration: underline; */
+  cursor: pointer;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: ${(props) => (props.theme === "dark" ? "#fff" : "#000")};
   }
+
+  svg {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+    transform: ${(props) => (props.isExpanded ? "rotate(180deg)" : "rotate(0)")};
+  }
+
   @media screen and (max-width: 767px) {
   }
 `;
@@ -109,7 +126,6 @@ export const PageWrapper = styled.div`
     align-items: center; /* Align content better in column layout */
   }
 `;
-
 
 export const Components = styled.div`
   max-width: 652px;
