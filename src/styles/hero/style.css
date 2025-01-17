@@ -44,7 +44,7 @@
     z-index: 8;
   }
   .hero-wrappper .hero-detail-wrapper .hero-detail-wrapper-inner h1 {
-    font-size: 60px;
+    font-size: 48px;
     text-transform: uppercase;
     text-align: center;
     color: #fff !important;
@@ -152,7 +152,7 @@
 body {
   margin: 0px;
   padding: 0px;
-  /* font-family: "Nunito", sans-serif; */
+  font-family: "Nunito", sans-serif;
 }
 
 h1,

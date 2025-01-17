@@ -164,7 +164,7 @@ export const Div = styled.div`
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
 
   @media screen and (max-width: 767px) {
-    padding-top: 240px;
+    padding-top: 185px;
   }
 
   /* Overlay with gradient color and opacity */

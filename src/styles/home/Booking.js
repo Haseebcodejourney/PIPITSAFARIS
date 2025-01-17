@@ -43,6 +43,7 @@ export const BoxWrapper = styled.div`
   align-items: flex-start;
   flex-direction: column;
   gap: 0.5rem;
+  transition: 0.3s ease all;
 
 `;
 
@@ -53,12 +54,14 @@ export const Div = styled.div`
   justify-content: flex-start;
   gap: 3px;
   box-sizing: border-box;
+    transition: 0.3s ease all;
   
   .inner{
     min-height: 344px;
     max-width: 400px;
     width: 100%;
     box-sizing: border-box;
+      transition: 0.3s ease all;
       @media (max-width: 767px){
         min-height: 191px;
         max-height: 191px;
