@@ -55,22 +55,11 @@ function Privacy({ theme }) {
               authority.
             </ListItems>
             <ListItems theme={theme}>
-              Company (referred to as either "the Company", "We", "Us" or "Our"
-              in this Agreement) refers to PipitSafaris Inc., 651 N Broad St,
-              Suite 201, Middletown, DE 19709.
-            </ListItems>
-            <ListItems theme={theme}>
               Cookies are small files that are placed on Your computer, mobile
               device or any other device by a website, containing the details of
               Your browsing history on that website among its many uses.
             </ListItems>
-            <ListItems theme={theme}>
-              Country refers to: Delaware, United States
-            </ListItems>
-            <ListItems theme={theme}>
-              Device means any device that can access the Service such as a
-              computer, a cellphone or a digital tablet.
-            </ListItems>
+
             <ListItems theme={theme}>
               Personal Data is any information that relates to an identified or
               identifiable individual.
