@@ -14,7 +14,7 @@ export default function Booking() {
   return (
     <>
       <Container>
-        <H2 fontSize='36px'>Why book with CloudSafaris?</H2>
+        <H2 fontSize='36px'>Why book with PipitSafaris?</H2>
         <Wrapper>
           <Div>
             <BoxWrapper>

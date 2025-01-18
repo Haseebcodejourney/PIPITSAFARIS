@@ -19,6 +19,8 @@ import {
   Strong,
   Text,
 } from "../../styles/home/Destinations";
+import { Button } from "../../styles/common/styles";
+import { Link } from "react-router-dom";
 
 function Destinations() {
   const [tourData, setTourData] = useState(Data);
@@ -74,14 +76,14 @@ function Destinations() {
                 alt="Images"
               />
             </Figure>
-            {/*<Div>
+            <Div>
               <Paper>Tanzania</Paper>
               <Strong>Stone Town, Zanzibar</Strong>
               <Text>
                 Nogorngoro Crater is a natural amphitheater of unparalleled
                 beauty
               </Text>
-            </Div>*/}
+            </Div>
           </Box>
 
           <Box className="aaa">
@@ -91,14 +93,14 @@ function Destinations() {
                 alt="Images"
               />
             </Figure>
-            {/* <Div>
+            <Div>
               <Paper>Tanzania</Paper>
               <Strong>Stone Town, Zanzibar</Strong>
               <Text>
                 Nogorngoro Crater is a natural amphitheater of unparalleled
                 beauty
               </Text>
-            </Div>*/}
+            </Div>
           </Box>
 
           <Box className="aaa">
@@ -108,14 +110,14 @@ function Destinations() {
                 alt="Images"
               />
             </Figure>
-            {/* <Div>
+            <Div>
               <Paper>Tanzania</Paper>
               <Strong>Stone Town, Zanzibar</Strong>
               <Text>
                 Nogorngoro Crater is a natural amphitheater of unparalleled
                 beauty
               </Text>
-            </Div>*/}
+            </Div>
           </Box>
 
           <Box className="aaa">
@@ -125,14 +127,14 @@ function Destinations() {
                 alt="Images"
               />
             </Figure>
-            {/*<Div>
+            <Div>
               <Paper>Tanzania</Paper>
               <Strong>Stone Town, Zanzibar</Strong>
               <Text>
                 Nogorngoro Crater is a natural amphitheater of unparalleled
                 beauty
               </Text>
-            </Div>*/}
+            </Div>
           </Box>
 
           <Box className="aaa">
@@ -142,14 +144,14 @@ function Destinations() {
                 alt="Images"
               />
             </Figure>
-            {/*<Div>
+            <Div>
               <Paper>Tanzania</Paper>
               <Strong>Stone Town, Zanzibar</Strong>
               <Text>
                 Nogorngoro Crater is a natural amphitheater of unparalleled
                 beauty
               </Text>
-            </Div>*/}
+            </Div>
           </Box>
 
           <Box className="aaa">
@@ -159,17 +161,18 @@ function Destinations() {
                 alt="Images"
               />
             </Figure>
-            {/*<Div>
+            <Div>
               <Paper>Tanzania</Paper>
               <Strong>Stone Town, Zanzibar</Strong>
               <Text>
                 Nogorngoro Crater is a natural amphitheater of unparalleled
                 beauty
               </Text>
-            </Div>*/}
+            </Div>
           </Box>
         </Slider>
       </BoxWrapper>
+      <Link to='/destinations'><Button variant="primary" style={{marginRight:'0',marginLeft:'auto', color:'#fff', marginTop: '10px'}}>See all Destinations</Button></Link>
     </Container>
   );
 }

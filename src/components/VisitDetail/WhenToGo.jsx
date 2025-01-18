@@ -7,29 +7,35 @@ import {
   Wrapper,
 } from "../../styles/DetailPage/WhenToGo";
 
-function WhenToGo() {
+function WhenToGo({ theme }) {
   return (
     <>
-      <Box>
-        <H2>When to Go</H2>
-        <List>
-          <ListItems>January</ListItems>
-          <ListItems>February</ListItems>
-          <ListItems>March</ListItems>
-          <ListItems>April</ListItems>
-          <ListItems>May</ListItems>
-          <ListItems>June</ListItems>
-          <ListItems>July</ListItems>
-          <ListItems>August</ListItems>
-          <ListItems>September</ListItems>
-          <ListItems>October</ListItems>
-          <ListItems>November</ListItems>
-          <ListItems>December</ListItems>
+      <Box theme={theme}>
+        <H2 theme={theme}>When to Go</H2>
+        <List theme={theme}>
+          <ListItems theme={theme} rating="excellent">January</ListItems>
+          <ListItems theme={theme} rating="excellent">February</ListItems>
+          <ListItems theme={theme} rating="good">March</ListItems>
+          <ListItems theme={theme} rating="good">April</ListItems>
+          <ListItems theme={theme} rating="fair">May</ListItems>
+          <ListItems theme={theme} rating="excellent">June</ListItems>
+          <ListItems theme={theme} rating="excellent">July</ListItems>
+          <ListItems theme={theme} rating="good">August</ListItems>
+          <ListItems theme={theme} rating="good">September</ListItems>
+          <ListItems theme={theme} rating="excellent">October</ListItems>
+          <ListItems theme={theme} rating="good">November</ListItems>
+          <ListItems theme={theme} rating="fair">December</ListItems>
         </List>
-        <Wrapper>
-          <Paper><Paper className="excellent"></Paper>Excellent</Paper>
-          <Paper><Paper className="excellent"></Paper>Good</Paper>
-          <Paper><Paper className="excellent"></Paper>Fair</Paper>
+        <Wrapper theme={theme}>
+          <Paper theme={theme}>
+            <span className="circle excellent"></span>Excellent
+          </Paper>
+          <Paper theme={theme}>
+            <span className="circle good"></span>Good
+          </Paper>
+          <Paper theme={theme}>
+            <span className="circle fair"></span>Fair
+          </Paper>
         </Wrapper>
       </Box>
     </>
@@ -37,3 +43,4 @@ function WhenToGo() {
 }
 
 export default WhenToGo;
+

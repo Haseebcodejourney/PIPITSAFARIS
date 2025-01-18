@@ -25,17 +25,25 @@ export const List = styled.ul`
 `;
 
 export const ListItems = styled.li`
-  /* Changed from styled.link to styled.li */
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
-  background-color: #4a7454;
+  background-color: ${(props) =>
+    props.rating === "excellent"
+      ? "#276749" // Dark green for Excellent
+      : props.rating === "good"
+      ? "#38A169" // Lighter green for Good
+      : "#68D391"}; // Lightest green for Fair
   color: #fff;
   font-size: 16px;
-  padding: 10px; /* Added padding for better appearance */
-  margin: 5px; /* Added margin for spacing between items */
+  padding: 10px;
+  margin: 5px;
   border-radius: 9999px;
-  border-color: #e8e8e8;
-  width: 97px;
+  max-width: 97px;
+  width: 100%;
   text-align: center;
+  @media screen and (max-width: 767px) {
+    max-width: 85px;
+    width: 100%;
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -49,24 +57,31 @@ export const Wrapper = styled.div`
 
 export const Paper = styled.span`
   color: ${(props) =>
-    props.theme === "dark" ? "#121212" : "#001730"}; /* Dark mode background */
+    props.theme === "dark" ? "#a1a1aa" : "#001730"}; /* Text color */
   font-size: 16px;
   display: flex;
   align-items: center;
   gap: 4px;
-  svg {
-    width: 14px;
-    height: 14px;
-  }
-  .excellent{
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px -1px rgba(0, 0, 0, .1);
-    border: 1px solid #e8e8e8;
-    background: #4a7454;
+
+  .circle {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    border: 0px solid #e8e8e8;
     width: 23px;
     height: 23px;
     display: inline-block;
     border-radius: 50%;
+  }
 
+  .excellent {
+    background: #276749; /* Dark green */
+  }
+
+  .good {
+    background: #38A169; /* Medium green */
+  }
+
+  .fair {
+    background: #68D391; /* Light green */
   }
 `;
 

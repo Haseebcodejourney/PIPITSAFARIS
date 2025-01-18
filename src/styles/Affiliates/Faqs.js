@@ -21,8 +21,7 @@ export const Container = styled.section`
 
 export const H2 = styled.h2`
   font-size: 48px;
-  /* color: #212121; */
-  color: ${(props) => (props.theme === 'dark' ? '#ecedee' : '#212121')};
+  color: ${(props) => (props.theme === 'dark' ? '#121212' : '#212121')};
 
   line-height: 1;
   text-align: left;
@@ -39,30 +38,28 @@ export const Wrapper = styled.div`
   }
 `;
 
-export const Question = styled.div`
+export const Question = styled.h3`
   font-size: 18px;
   font-weight: bold;
-  /* color: #212121; */
-  color: ${(props) => (props.theme === 'dark' ? '#ecedee' : '#212121')};
+  color: ${(props) => (props.theme === 'dark' ? '#121212' : '#212121')};
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   padding: 24px 0;
   transition: color 0.3s ease;
 
-  &:hover {
-    // color: #0056b3;
-  }
-
   span {
     font-size: 20px;
-    line-height: 1;
+    line-height: 1.2;
     margin-left: 10px;
   }
+
   @media screen and (max-width: 1024px) {
-    font-size: 18px;
+    font-size: 16px; /* Adjust font-size for smaller screens */
+    padding: 16px 0; /* Adjust spacing for compact view */
   }
 `;
+
 
 export const Answer = styled.div`
   padding-left: 20px;

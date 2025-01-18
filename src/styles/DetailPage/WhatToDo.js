@@ -9,6 +9,8 @@ export const Box = styled.div`
   align-items: center;
   gap: 16px;
   @media screen and (max-width: 767px) {
+    flex-direction: column;
+    align-items: flex-start;
   }
 `;
 export const H2 = styled.h2`
@@ -32,11 +34,18 @@ export const H3 = styled.h2`
 export const Left = styled.div`
   max-width: 326px;
   width: 100%;
+  @media screen and (max-width: 767px) {
+    max-width: unset;
+  }
 `;
 
 export const Right = styled.div`
   max-width: 326px;
   width: 100%;
+  margin-bottom: 30px;
+  @media screen and (max-width: 767px) {
+    max-width: unset;
+  }
 `;
 
 export const H4 = styled.h3`
@@ -64,7 +73,7 @@ export const Image = styled.img`
 `;
 export const Text = styled.p`
   color: ${(props) =>
-    props.theme === "dark" ? "#121212" : "#001730"}; /* Dark mode background */
+    props.theme === "dark" ? "#a1a1aa" : "#001730"}; /* Dark mode background */
   font-size: 16px;
   padding-bottom: 10px;
   @media screen and (max-width: 767px) {

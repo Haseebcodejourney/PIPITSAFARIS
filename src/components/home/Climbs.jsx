@@ -110,7 +110,7 @@ function Safaris({ theme }) {
                   <Text theme={theme}>Starting at</Text>
                   <Price theme={theme}>
                     <Strong theme={theme}>${tour.price}</Strong>
-                    <Strong theme={theme}>{tour.currency}</Strong>
+                    <Strong theme={theme} style={{fontSize:'12px', fontWeight:'normal'}}>{tour.currency}</Strong>
                     <Paper theme={theme}>{tour.priceDescription}</Paper>
                   </Price>
                 </PriceWrapper>

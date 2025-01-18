@@ -54,7 +54,6 @@ function Privacy({ theme }) {
               entitled to vote for election of directors or other managing
               authority.
             </ListItems>
-
             <ListItems theme={theme}>
               Cookies are small files that are placed on Your computer, mobile
               device or any other device by a website, containing the details of
@@ -387,10 +386,10 @@ function Privacy({ theme }) {
           <Text theme={theme}>
             By email:{" "}
             <a
-              href="mailto:hello@cloudsafaris.com"
+              href="mailto:hello@PipitSafaris.com"
               style={{ color: "#a1a1aa" }}
             >
-              hello@cloudsafaris.com
+              hello@PipitSafaris.com
             </a>
           </Text>
         </Left>

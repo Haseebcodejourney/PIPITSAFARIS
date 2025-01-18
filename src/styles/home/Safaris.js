@@ -18,15 +18,6 @@ export const Container = styled.section`
   }
 `;
 
-
-// export const H2 = styled.h2`
-//   font-size: 36px;
-//   padding: 4px 0px;
-//   margin-bottom: 1.5rem;
-//   color: ${(props) => (props.theme === 'dark' ? '#fff' : '#11181C')} !important;
-
-// `;
-
 export const H2 = styled.h2`
   font-size: 36px;
   padding: 4px 0px;
@@ -193,6 +184,7 @@ export const Strong = styled.strong`
 
 export const Paper = styled.span`
   /* margin-bottom: 2px; */
+  font-size: 12px;
   color: ${(props) => (props.theme === "dark" ? "#c1c1c1" : "#454545")};
 `;
 
@@ -241,12 +233,15 @@ export const ListItems = styled.li`
 export const Wrapper = styled.div``;
 export const PriceWrapper = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: row;
-  justify-content: flex-start;
+  // justify-content: flex-start;
+      flex-direction: column;
+    justify-content: flex-start;
   gap: 3px;
   padding-top: 12px;
   p {
+  
     @media screen and (max-width: 767px) {
       font-size: 12px;
     }
@@ -257,6 +252,6 @@ export const Price = styled.div`
   display: flex;
   align-items: center;
   gap: 0.25rem;
-  font-size: 12px;
+  font-size: 20px;
   color: ${(props) => (props.theme === "dark" ? "#c1c1c1" : "#454545")};
 `;

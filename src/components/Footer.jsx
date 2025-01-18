@@ -178,7 +178,7 @@ export default function Footer({ theme }) {
         </InnerBox>
       </Box>
       <CopyRight theme={theme}>
-        <P theme={theme}>© 2025 Yakin Dogu. TRNC. All rights reserved.</P>
+        <P theme={theme}>© 2025 All rights reserved.</P>
       </CopyRight>
     </Wrapper>
   );

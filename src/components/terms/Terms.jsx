@@ -317,7 +317,7 @@ function Terms({ theme }) {
             Operating Name: CloudSafaris Canada<br></br>
             Address: 4230 Sherwoodtowne Blvd, Mississauga, ON L4Z 2G6<br></br>
             Phone: +1 888 859 0890 <br></br>
-            Email: <u style={{ fontWeight: "500" }}>hello@cloudsafaris.com</u>
+            Email: <u style={{ fontWeight: "500" }}>hello@PipitSafaris.com</u>
           </Text>*/}
         </Right>
       </Container>
