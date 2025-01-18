@@ -69,7 +69,7 @@ export default function Header({ toggleTheme, theme }) {
               to="/trips"
               style={{ backgroundColor: "#ff5b00", color: "#fff" }}
             >
-              Find Your{" "}
+              Find Your trip
             </Link>
           </ButtonsPrimary>
         </ButtonsWrapper>
