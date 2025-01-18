@@ -69,6 +69,7 @@ export default function TripBox({ theme }) {
                 variants={boxVariants}
               >
                 <Box theme={theme}>
+                <Link to='/trip-details'>
                   <Figure>
                     <Image
                       src={toggleImage ? tour.altImageSrc : tour.imageSrc} // Toggle between images
@@ -78,8 +79,9 @@ export default function TripBox({ theme }) {
                     />
                   </Figure>
                   <Strong theme={theme} style={{ marginBottom: '5px' }} className="main-heading">
-                    <Link to="#" style={{ color: 'unset', marginBottom: '5px' }}>{tour.title}</Link>
+                    <Link style={{ color: 'unset', marginBottom: '5px' }}>{tour.title}</Link>
                   </Strong>
+                  </Link>
                   <Paper theme={theme} style={{ marginTop: '5px' }}>{tour.location}</Paper>
                   <Text theme={theme}>{tour.operator}</Text>
                   <Text theme={theme} className="text-main">{tour.description}</Text>
