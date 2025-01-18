@@ -56,7 +56,7 @@ function Privacy({ theme }) {
             </ListItems>
             <ListItems theme={theme}>
               Company (referred to as either "the Company", "We", "Us" or "Our"
-              in this Agreement) refers to CloudSafari Inc., 651 N Broad St,
+              in this Agreement) refers to PipitSafaris Inc., 651 N Broad St,
               Suite 201, Middletown, DE 19709.
             </ListItems>
             <ListItems theme={theme}>
@@ -91,8 +91,8 @@ function Privacy({ theme }) {
             </ListItems>
 
             <ListItems theme={theme}>
-              Website refers to CloudSafaris, accessible from
-              www.cloudsafaris.com
+              Website refers to PipitSafaris, accessible from
+              www.PipitSafaris.com
             </ListItems>
             <ListItems theme={theme}>
               You means the individual accessing or using the Service, or the
@@ -397,10 +397,10 @@ function Privacy({ theme }) {
           <Text theme={theme}>
             By email:{" "}
             <a
-              href="mailto:hello@cloudsafaris.com"
+              href="mailto:hello@PipitSafaris.com"
               style={{ color: "#a1a1aa" }}
             >
-              hello@cloudsafaris.com
+              hello@PipitSafaris.com
             </a>
           </Text>
         </Left>

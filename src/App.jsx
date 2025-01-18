@@ -18,7 +18,7 @@ import EmptyPage from "./pages/EmptyPage";
 import HotelsPage from "./pages/HotelsPage";
 import DestinationPage from "./pages/DestinationPage";
 import ".././src/App.css";
-import TripDetailPage from "./pages/TripDetailPage";
+import DestinationDetailPage from "./pages/DestinationDetailPage";
 
 function App() {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark"); // Get theme from localStorage or default to dark
@@ -58,7 +58,7 @@ function App() {
             path="/destinations"
             element={<DestinationPage theme={theme} />}
           />
-          <Route path="/details" element={<TripDetailPage theme={theme} />} />
+          <Route path="/details" element={<DestinationDetailPage theme={theme} />} />
         </Routes>
         <Footer theme={theme} />
       </Router>
