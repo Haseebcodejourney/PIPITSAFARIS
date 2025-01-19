@@ -1,7 +1,9 @@
 import React from 'react'
-import HeroCommon from '../components/HeroCommon'
-import { Container } from '../styles/TripDetail/Style'
-import TripDetailsHero from '../components/TripDetails/TripDetailsHero'
+import HeroCommon from '../components/HeroCommon';
+import { Container } from '../styles/TripDetail/Style';
+import TripDetailsHero from '../components/TripDetails/TripDetailsHero';
+import TripOverview from '../components/TripDetails/TripOverview';
+import TripDayByDay from '../components/TripDetails/DayByDay';
 
 export default function TripDetailPage({theme}) {
   return (
@@ -13,6 +15,8 @@ export default function TripDetailPage({theme}) {
       />
     <Container>
       <TripDetailsHero/>
+      <TripOverview/>
+      <TripDayByDay />
     </Container>
  </>
   )
