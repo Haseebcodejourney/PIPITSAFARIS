@@ -50,6 +50,7 @@ function App() {
           <Route path="/affiliates" element={<AffiliatesPage theme={theme} />} />
           <Route path="/blog" element={<BlogPage theme={theme} />} />
           <Route path="/trips" element={<TripsPage theme={theme} />} />
+          <Route path="/destinations" element={<DestinationPage theme={theme} />} />
           <Route path="/hotels" element={<HotelsPage theme={theme} />} />
           <Route path="/destination-details" element={<DestinationPage theme={theme} />} /> {/* Corrected to DestinationPage */}
           <Route path="/trip-details" element={<TripDetailPage theme={theme} />} />
