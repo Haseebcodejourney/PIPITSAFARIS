@@ -24,3 +24,7 @@ main {
 a {
   color: unset;
 }
+
+::-webkit-scrollbar {
+  display: none !important;
+}

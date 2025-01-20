@@ -55,8 +55,8 @@ export const ListItems = styled.li`
   border-radius: 0.5rem;
   background: #f6f6f6;
   color: #000;
-  
-  .active {
+
+  &.active {
     background: #212121;
     color: #fff;
   }
@@ -64,8 +64,12 @@ export const ListItems = styled.li`
 
 export const MapWrapper = styled.div`
   width: 100%;
-  height: 400px; // Assuming a fixed height for map display; can adjust based on use case
-  background-color: #f4f4f4; // Placeholder style
+  height: 400px; /* Adjust based on use case */
+  background-color: #f4f4f4; /* Placeholder style */
+  
+  @media screen and (max-width: 767px) {
+    height: 300px; /* Adjust for smaller screens */
+  }
 `;
 
 export const IncludedWrapper = styled.div`
@@ -87,6 +91,7 @@ export const H4 = styled.h4`
 export const Paper = styled.span`
   display: inline-block;
   margin-left: 10px;
+
   svg {
     width: 18px;
     height: 18px;
@@ -98,18 +103,18 @@ export const ListTick = styled.ul`
   margin: 0;
   list-style: none;
 
-  li{
+  li {
     background: none;
     display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 0;
-  margin-bottom: 8px;
+    align-items: center;
+    gap: 8px;
+    padding: 0;
+    margin-bottom: 8px;
 
-  span{
-    margin: 0;
-    color: #609165;
-  }
+    span {
+      margin: 0;
+      color: #609165; /* Safari green color */
+    }
   }
 `;
 
@@ -117,17 +122,18 @@ export const ListExclude = styled.ul`
   padding: 0;
   margin: 0;
   list-style: none;
-  li{
+
+  li {
     background: none;
     display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 0;
-  margin-bottom: 8px;
+    align-items: center;
+    gap: 8px;
+    padding: 0;
+    margin-bottom: 8px;
 
-  span{
-    margin: 0;
-    color: #dc2626;
+    span {
+      margin: 0;
+      color: #dc2626; /* Red color for exclusions */
+    }
   }
 `;
-

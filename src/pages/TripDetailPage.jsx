@@ -4,6 +4,7 @@ import { Container } from '../styles/TripDetail/Style';
 import TripDetailsHero from '../components/TripDetails/TripDetailsHero';
 import TripOverview from '../components/TripDetails/TripOverview';
 import TripDayByDay from '../components/TripDetails/DayByDay';
+import Itinerary from '../components/TripDetails/Itinerary';
 
 export default function TripDetailPage({theme}) {
   return (
@@ -17,6 +18,7 @@ export default function TripDetailPage({theme}) {
       <TripDetailsHero/>
       <TripOverview/>
       <TripDayByDay />
+      <Itinerary/>
     </Container>
  </>
   )
