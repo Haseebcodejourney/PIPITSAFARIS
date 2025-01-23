@@ -5,6 +5,7 @@ import TripDetailsHero from '../components/TripDetails/TripDetailsHero';
 import TripOverview from '../components/TripDetails/TripOverview';
 import TripDayByDay from '../components/TripDetails/DayByDay';
 import Itinerary from '../components/TripDetails/Itinerary';
+import WhatToknow from '../components/TripDetails/WhatToknow';
 
 export default function TripDetailPage({theme}) {
   return (
@@ -19,6 +20,7 @@ export default function TripDetailPage({theme}) {
       <TripOverview/>
       <TripDayByDay />
       <Itinerary/>
+      <WhatToknow/>
     </Container>
  </>
   )

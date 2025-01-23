@@ -19,6 +19,7 @@ import HotelsPage from "./pages/HotelsPage";
 import DestinationPage from "./pages/DestinationPage";  // This import is correct
 import ".././src/App.css";
 import TripDetailPage from "./pages/TripDetailPage";
+import DestinationDetailPage from "./pages/DestinationDetailPage";
 
 function App() {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark"); // Get theme from localStorage or default to dark
@@ -52,7 +53,7 @@ function App() {
           <Route path="/trips" element={<TripsPage theme={theme} />} />
           <Route path="/destinations" element={<DestinationPage theme={theme} />} />
           <Route path="/hotels" element={<HotelsPage theme={theme} />} />
-          <Route path="/destination-details" element={<DestinationPage theme={theme} />} /> {/* Corrected to DestinationPage */}
+          <Route path="/destination-details" element={<DestinationDetailPage theme={theme} />} /> {/* Corrected to DestinationPage */}
           <Route path="/trip-details" element={<TripDetailPage theme={theme} />} />
         </Routes>
         <Footer theme={theme} />

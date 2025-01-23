@@ -47,7 +47,7 @@ export default function Cards({ theme }) {
             variants={boxVariants}
           >
             <Card theme={theme}>
-              <Link to="/details">
+              <Link to="/destination-details">
                 <Figure theme={theme}>
                   <Image
                     src={hotel.image} // Dynamic image source from JSON
