@@ -8,7 +8,9 @@ export const Container = styled.section`
     align-items: flex-start;
     justify-content: center;
     padding-bottom: 48px;
-    border-bottom: 1px solid #e8e8e8;
+    border-bottom: 1px solid
+    ${(props) => (props.theme === "dark" ? "#c1c1c1" : "#454545")};
+  
     box-sizing: border-box;
     margin-bottom: 48px;
 
@@ -48,7 +50,7 @@ export const Button = styled.button`
     align-items: center;
     padding: 10px 20px;
     background-color: #212121;
-    color: #fff;
+    color: ${(props) => (props.theme === "dark" ? "#ecedee" : "#f6f6f6")};
     border: none;
     border-radius: 5px;
     cursor: pointer;

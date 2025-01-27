@@ -225,7 +225,8 @@ export const ListItems = styled.li`
   /* border: 1px solid #e8e8e8; */
   border: 1px solid
     ${(props) => (props.theme === "dark" ? "#c1c1c1" : "#454545")};
-  border-radius: 9999px;
+  
+    border-radius: 9999px;
   /* color: #000; */
   color: ${(props) => (props.theme === "dark" ? "#c1c1c1" : "#454545")};
 `;

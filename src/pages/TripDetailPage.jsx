@@ -6,6 +6,7 @@ import TripOverview from '../components/TripDetails/TripOverview';
 import TripDayByDay from '../components/TripDetails/DayByDay';
 import Itinerary from '../components/TripDetails/Itinerary';
 import WhatToknow from '../components/TripDetails/WhatToknow';
+import BriefItinerary from '../components/TripDetails/BriefItinerary';
 
 export default function TripDetailPage({theme}) {
   return (
@@ -23,20 +24,7 @@ export default function TripDetailPage({theme}) {
         <Itinerary theme={theme}/>
         <WhatToknow theme={theme}/>
       </Left>
-      <Right theme={theme}>
-        <RBox theme={theme}>
-          <RTop theme={theme}>
-            <RTopText theme={theme}>
-                <span>Travellers</span>
-                <strong>travellers</strong>
-            </RTopText >
-            <RTopText theme={theme}>
-            <span>Arrival</span>
-            <strong>Feb 02, 2025</strong>
-            </RTopText>
-          </RTop>
-        </RBox>
-      </Right>
+      <BriefItinerary/>
     </Container>
  </>
   )

@@ -9,7 +9,9 @@ export const Container = styled.section`
   align-items: flex-start;
   justify-content: center;
   padding-bottom: 48px;
-  border-bottom: 1px solid #e8e8e8;
+  border-bottom: 1px solid
+    ${(props) => (props.theme === "dark" ? "#c1c1c1" : "#e8e8e8")};
+  
   box-sizing: border-box;
   margin-bottom: 48px;
 
@@ -39,7 +41,9 @@ export const List = styled.ul`
 // Remove the first-child style directly from ListItems component if needed
 export const ListItems = styled.li`
   font-size: 16px;
-
+  background-color: ${(props) =>
+    props.theme === "dark" ? "#18181b" : "transparent"};
+  
   &:first-child {
     list-style: none;
   }
@@ -49,7 +53,9 @@ export const Box = styled.div`
   max-width: 784px;
   width: 100%;
   border-radius: 1rem;
-  border: 1px solid #e8e8e8;
+  border: 1px solid
+    ${(props) => (props.theme === "dark" ? "#c1c1c1" : "#e8e8e8")};
+  
   padding: 24px;
 `;
 
@@ -72,7 +78,9 @@ export const DateWapper = styled.div`
     display: block;
     width: 1px;
     height: 50px;
-    background-color: #e8e8e8;
+    background-color: ${(props) =>
+    props.theme === "dark" ? "#fff" : "#ae9d9da3"};
+    
     position: absolute;
     right: -30px;
     top: 0; /* Position the line better */
@@ -99,7 +107,7 @@ export const LocationWrapper = styled.div`
 export const TabsWrapper = styled.div``;
 
 export const DestinationBox = styled.div`
-padding: 0;
+  padding: 0;
 `;
 
 export const DList = styled.ul`
@@ -109,86 +117,74 @@ export const DList = styled.ul`
   gap: 10px;
   overflow-x: auto;
   overflow-y: hidden;
-
-  
 `;
 
-
 export const DListItems = styled.li`
-    padding-top: .25rem;
-    padding-bottom: .25rem;
-    background: #f6f6f6;
-    border-radius: 9999px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    &:hover{
-    box-shadow: 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  background: #f6f6f6;
+  border-radius: 9999px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  &:hover {
+    box-shadow: 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -4px rgba(0, 0, 0, .1);
   }
 `;
 
 export const DPaper = styled.span`
-font-size: 12px;
-padding: 0px 8px;
+  font-size: 12px;
+  padding: 0px 8px;
 `;
 
 export const DFigure = styled.figure`
-    border-radius: 9999px;
-    margin: 0;
+  border-radius: 9999px;
+  margin: 0;
 `;
 
 export const DImage = styled.img`
- border-radius: 9999px;
+  border-radius: 9999px;
 `;
 
 export const JWrapper = styled.div`
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    margin-top: 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 24px;
 `;
 
 export const JLeft = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 `;
 
 export const JDot = styled.div`
-    border: 8px solid #000;
-    background: #fff;
-    border-radius: 50%;
+  border: 8px solid ${(props) => (props.theme === "dark" ? "#fff5f5" : "#fff")};
+  background: #fff;
+  border-radius: 50%;
 `;
 
 export const JBorder = styled.div`
-    border: 1px solid #b9b9b9;
-    border-right-width: 1px;
-    height: 70px;
+  border: 1px solid
+    ${(props) => (props.theme === "dark" ? "#c1c1c1" : "#e8e8e8")};
+  border-right-width: 1px;
+  height: 70px;
 `;
 
-
-
 export const JRight = styled.div`
-display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    gap: 8px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
 `;
 
 export const JPaper = styled.span`
-    font-size: 12px;
+  font-size: 12px;
 `;
 
 export const JSrtrong = styled.strong`
-font-size: 14px;
+  font-size: 14px;
 `;
-
-// For Hotels
-
-// export const JSrtrong = styled.strong`
-// font-size: 14px;
-// `;
-
-

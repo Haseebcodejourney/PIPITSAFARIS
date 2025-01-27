@@ -9,34 +9,30 @@ export const Container = styled.section`
   align-items: flex-start;
   justify-content: center;
   padding-bottom: 48px;
-  border-bottom: 1px solid #e8e8e8;
+  border-bottom: 1px solid
+    ${(props) => (props.theme === "dark" ? "#c1c1c1" : "#454545")};
+  
   margin-bottom: 48px;
   box-sizing: border-box;
 
   @media screen and (max-width: 767px) {
-    padding-bottom: 64px;
-    padding-top: 34px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 34px 15px 64px;
   }
 `;
 
 export const H2 = styled.h2`
   font-size: 24px;
   margin-bottom: 20px;
-  padding: 0;
 `;
 
 export const H3 = styled.h3`
   font-size: 18px;
   margin-bottom: 10px;
-  padding: 0;
 `;
 
 export const Text = styled.p`
   font-size: 16px;
   margin-bottom: 10px;
-  padding: 0;
 `;
 
 export const List = styled.ul`
@@ -50,23 +46,31 @@ export const List = styled.ul`
 `;
 
 export const ListItems = styled.li`
-  padding: 4px 8px;
+  padding: 4px 8px !important;
   font-size: 12px;
   border-radius: 0.5rem;
-  background: #f6f6f6;
-  color: #000;
+  /* background: #f6f6f6; */
+  background: ${(props) => (props.theme === "dark" ? "transparent" : "transparent")};
+  
+  border: 0px solid
+    ${(props) => (props.theme === "dark" ? "#c1c1c1" : "#0000001a")};
+  padding-left: 0px;
+  color: ${(props) => (props.theme === "dark" ? "#ecedee" : "#212121")};
 
   &.active {
-    background: #212121;
-    color: #fff;
+    background: ${(props) => (props.theme === "dark" ? "#000" : "#000000db")};
+    border: 1px solid
+    ${(props) => (props.theme === "dark" ? "#c1c1c1" : "transparent")};
+  
+    color: ${(props) => (props.theme === "dark" ? "#ecedee" : "#ffffff")};
   }
 `;
 
 export const MapWrapper = styled.div`
   width: 100%;
   height: 400px; /* Adjust based on use case */
-  background-color: #f4f4f4; /* Placeholder style */
-  
+  background-color: #f4f4f4;
+  border-radius: 0.75rem;
   @media screen and (max-width: 767px) {
     height: 300px; /* Adjust for smaller screens */
   }
@@ -83,7 +87,6 @@ export const ExcludedWrapper = styled.div`
 export const H4 = styled.h4`
   font-size: 18px;
   margin-bottom: 10px;
-  padding: 0;
   display: flex;
   align-items: center;
 `;
@@ -91,6 +94,7 @@ export const H4 = styled.h4`
 export const Paper = styled.span`
   display: inline-block;
   margin-left: 10px;
+  color: ${(props) => (props.theme === "dark" ? "#ecedee" : "#212121")};
 
   svg {
     width: 18px;
@@ -102,17 +106,15 @@ export const ListTick = styled.ul`
   padding: 0;
   margin: 0;
   list-style: none;
+  color: ${(props) => (props.theme === "dark" ? "#ecedee" : "#212121")};
 
   li {
-    background: none;
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 0;
     margin-bottom: 8px;
 
     span {
-      margin: 0;
       color: #609165; /* Safari green color */
     }
   }
@@ -124,15 +126,12 @@ export const ListExclude = styled.ul`
   list-style: none;
 
   li {
-    background: none;
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 0;
     margin-bottom: 8px;
 
     span {
-      margin: 0;
       color: #dc2626; /* Red color for exclusions */
     }
   }

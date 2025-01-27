@@ -41,7 +41,9 @@ export const Right = styled.div`
 export const RBox = styled.div`
     box-shadow: 0 20px 25px -5px rgba(0,0,0,.1),0 8px 10px -6px rgba(0,0,0,.1);
     padding: 1.5rem;
-    border: 1px solid #e8e8e8;
+    border: 1px solid
+    ${(props) => (props.theme === "dark" ? "#c1c1c1" : "#454545")};
+  
     border-radius: .75rem;
     margin-bottom: 2rem;
     width: 100%;
@@ -50,15 +52,16 @@ export const RBox = styled.div`
 `;
 
 export const RTop = styled.div`
-       display: flex
-;
+       display: flex;
     align-items: center;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05);
     padding-top: .5rem;
     padding-bottom: .5rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    border-color: #e8e8e8;
+    border: 1px solid
+    ${(props) => (props.theme === "dark" ? "#c1c1c1" : "#454545")};
+  
     border-width: 1px;
     border-radius: .375rem;
     margin-bottom: .5rem;
@@ -86,7 +89,7 @@ export const RTopText = styled.div`
     max-width: 72px;
     width: 100%;
     span{
-      color: #6b7280;
+      color: ${(props) => (props.theme === "dark" ? "#ecedee" : "#f6f6f6")};
       font-size: 12px;
     }
     strong{

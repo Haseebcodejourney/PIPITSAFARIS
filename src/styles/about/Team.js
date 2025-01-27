@@ -120,6 +120,7 @@ export const Box = styled.div`
   transition: 0.3s ease all;
   background-color: ${(props) =>
     props.theme === "dark" ? "#18181b" : "transparent"};
+  
   border-radius: 12px;
   padding: 25px 20px;
   height: auto;
