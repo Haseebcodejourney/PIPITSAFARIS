@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 // Styled components for the modal container with animation
 export const ModalContainer = styled(motion.div)`
-  background-color: white;
+  background-color: #ffffffe0;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
