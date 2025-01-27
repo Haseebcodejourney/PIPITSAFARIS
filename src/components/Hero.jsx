@@ -1,7 +1,10 @@
 import "../styles/hero/style.css";
 import { Link } from "react-router-dom";
+import ContactModal from '../components/Modal/ContactModal';
+import { useState } from "react";
 
 export default function Hero() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <>
       <section className="hero-wrappper">
@@ -20,7 +23,7 @@ export default function Hero() {
             <h1>Live your dream African safari</h1>
             <span>Take the next step in creating lifetime memories</span>
             <strong>
-              <Link style={{ color: "#fff" }} to="/find-trip">
+              <Link onClick={() => setIsModalOpen(true)}>
                 Plan your trip
               </Link>
             </strong>
@@ -46,6 +49,9 @@ export default function Hero() {
           </div>
         </div>
       </section>
+
+      <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+
     </>
   );
 }
