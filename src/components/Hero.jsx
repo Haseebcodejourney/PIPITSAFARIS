@@ -9,13 +9,20 @@ export default function Hero() {
     <>
       <section className="hero-wrappper">
         <div className="video-wrapper-hero">
-          <video className="video-wrapper" autoPlay muted loop playsInline>
-            <source
-              src="https://static.cloudsafaris.com/public/Landing-Video.mp4?action=get"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
+        <video
+  className="video-wrapper"
+  autoPlay
+  muted
+  loop
+  playsInline
+  preload="auto"
+>
+  <source
+    src="https://static.cloudsafaris.com/public/Landing-Video.mp4?action=get"
+    type="video/mp4"
+  />
+  Your browser does not support the video tag.
+</video>
           <div className="video-overlay"></div>
         </div>
         <div className="hero-detail-wrapper">
