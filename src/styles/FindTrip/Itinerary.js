@@ -120,21 +120,23 @@ export const DList = styled.ul`
 `;
 
 export const DListItems = styled.li`
-  padding-top: .25rem;
-  padding-bottom: .25rem;
-  background: #f6f6f6;
+  padding: 0.25rem;
+  background: ${(props) => (props.theme === "dark" ? "#0000" : "#f6f6f6")};
   border-radius: 9999px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
+  border: 1px solid ${(props) => (props.theme === "dark" ? "#c1c1c1" : "#e8e8e8")};
   &:hover {
-    box-shadow: 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -4px rgba(0, 0, 0, .1);
+    box-shadow: 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
   }
 `;
+
 
 export const DPaper = styled.span`
   font-size: 12px;
   padding: 0px 8px;
+  width: max-content;
 `;
 
 export const DFigure = styled.figure`
@@ -161,7 +163,7 @@ export const JLeft = styled.div`
 `;
 
 export const JDot = styled.div`
-  border: 8px solid ${(props) => (props.theme === "dark" ? "#fff5f5" : "#fff")};
+  border: 8px solid ${(props) => (props.theme === "dark" ? "#fff5f5" : "#e8e8e8")};
   background: #fff;
   border-radius: 50%;
 `;

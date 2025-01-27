@@ -9,7 +9,7 @@ export const Container = styled.section`
     justify-content: center;
     padding-bottom: 48px;
     border-bottom: 1px solid
-    ${(props) => (props.theme === "dark" ? "#c1c1c1" : "#454545")};
+    ${(props) => (props.theme === "dark" ? "#c1c1c1" : "#e8e8e8")};
   
     box-sizing: border-box;
     margin-bottom: 48px;

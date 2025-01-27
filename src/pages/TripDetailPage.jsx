@@ -24,7 +24,7 @@ export default function TripDetailPage({theme}) {
         <Itinerary theme={theme}/>
         <WhatToknow theme={theme}/>
       </Left>
-      <BriefItinerary/>
+      <BriefItinerary theme={theme}/>
     </Container>
  </>
   )

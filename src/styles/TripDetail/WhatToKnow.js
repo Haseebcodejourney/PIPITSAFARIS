@@ -37,10 +37,11 @@ export const BoxWrapper = styled.div`
 export const Box = styled.div`
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -4px rgba(0, 0, 0, .1);
   /* background-color: #fff; */
-  border-width: 1px;
   border-radius: .75rem;
   max-width: 389px;
   width: 100%;
+  border: 1px solid
+  ${(props) => (props.theme === "dark" ? "#c1c1c1" : "#e8e8e8")};
   height: auto;
   padding: 1.5rem;
   transition: 0.3s ease all;

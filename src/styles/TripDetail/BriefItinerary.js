@@ -111,6 +111,7 @@ export const RTopText = styled.div`
     }
     strong{
       font-size: 12px;
+      color: ${(props) => (props.theme === "dark" ? "#ecedee" : "#000")};
     }
     &:nth-child(2){
         &::after{
@@ -148,6 +149,7 @@ export const Inputbox = styled.div`
     gap: 2px;
     flex-direction: column;
     width: 100%;
+    
 `;
 
 export const Label = styled.label`
@@ -157,18 +159,22 @@ export const Label = styled.label`
 `;
 
 export const Input = styled.input`
-    font-size: .75rem;
-    line-height: 1rem;
-    background: #fff;
-    border: 1px solid
-    ${(props) => (props.theme === "dark" ? "#c1c1c1" : "#e8e8e8")};
-  
-    border-radius: .25rem;
-    padding: .5rem .75rem;
-    width: 100%;
-    &:focus{
-        outline: unset;
-    }
+  font-size: 0.75rem;
+  line-height: 1rem;
+  background: transparent;
+  color: ${(props) => (props.theme === "dark" ? "#ecedee" : "#000")};
+  border: 1px solid ${(props) => (props.theme === "dark" ? "#c1c1c1" : "#e8e8e8")};
+  border-radius: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  width: 100%;
+
+  &::placeholder {
+    color: ${(props) => (props.theme === "dark" ? "#aaa" : "#888")};
+  }
+
+  &:focus {
+    outline: none;
+  }
 `;
 
 export const InputButton = styled.button`
@@ -183,7 +189,7 @@ export const InputButton = styled.button`
     background: #000000;
     border: 0;
     /* color: #fff; */
-    color: ${(props) => (props.theme === "dark" ? "#ecedee" : "#000")};
+    color: ${(props) => (props.theme === "dark" ? "#ecedee" : "#fff")};
 
     border-radius: .25rem;
     margin-bottom: 1px;
@@ -213,8 +219,7 @@ export const H3 = styled.h3`
         font-size: .75rem;
         line-height: 1rem;
         /* color: #212121; */
-        color: ${(props) => (props.theme === "dark" ? "#ecedee" : "#000")};
-
+        /* color: ${(props) => (props.theme === "dark" ? "#ecedee" : "#000")}; */
         padding-left: 5px;
         font-weight: 400;
     }

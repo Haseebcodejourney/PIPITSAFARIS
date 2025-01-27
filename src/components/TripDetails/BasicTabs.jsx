@@ -32,7 +32,7 @@ function a11yProps(index) {
     };
 }
 
-export default function BasicTabs() {
+export default function BasicTabs({theme}) {
     const [value, setValue] = React.useState(0);
 
     const handleChange = (event, newValue) => {
@@ -43,106 +43,106 @@ export default function BasicTabs() {
         <Box sx={{ width: '100%' }}>
             <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
                 <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-                    <Tab label="Destinations" {...a11yProps(0)} />
-                    <Tab label="Hotels" {...a11yProps(1)} />
-                    <Tab label="Overview" {...a11yProps(2)} />
-                    <Tab label="Meals & Drinks" {...a11yProps(3)} />
+                    <Tab label="Destinations" {...a11yProps(0)}/>
+                    <Tab label="Hotels" {...a11yProps(1)}/>
+                    <Tab label="Overview" {...a11yProps(2)}/>
+                    <Tab label="Meals & Drinks" {...a11yProps(3)}/>
                 </Tabs>
             </Box>
 
 
             <CustomTabPanel value={value} index={0}>
-                <DestinationBox>
-                    <DList style={{ padding: '0px' }}>
-                        <DListItems>
-                            <DFigure>
+                <DestinationBox theme={theme}>
+                    <DList style={{ padding: '0px' }} theme={theme}>
+                        <DListItems theme={theme}>
+                            <DFigure theme={theme}>
                                 <DImage src='https://static.cloudsafaris.com/public/2b2a7cfd-6c29-49df-954a-ba709fc93c8b_3679500782_3d8ab5750c_b.jpg?action=get&host=true&width=100' alt='' width={36} height={36} />
                             </DFigure>
                             <DPaper>Horombo Hut</DPaper>
                         </DListItems>
 
-                        <DListItems>
-                            <DFigure>
+                        <DListItems theme={theme}>
+                            <DFigure theme={theme}>
                                 <DImage src='https://static.cloudsafaris.com/public/2b2a7cfd-6c29-49df-954a-ba709fc93c8b_3679500782_3d8ab5750c_b.jpg?action=get&host=true&width=100' alt='' width={36} height={36} />
                             </DFigure>
                             <DPaper>Horombo Hut</DPaper>
                         </DListItems>
 
-                        <DListItems>
-                            <DFigure>
+                        <DListItems theme={theme}>
+                            <DFigure theme={theme}>
                                 <DImage src='https://static.cloudsafaris.com/public/2b2a7cfd-6c29-49df-954a-ba709fc93c8b_3679500782_3d8ab5750c_b.jpg?action=get&host=true&width=100' alt='' width={36} height={36} />
                             </DFigure>
                             <DPaper>Horombo Hut</DPaper>
                         </DListItems>
 
-                        <DListItems>
-                            <DFigure>
+                        <DListItems theme={theme}>
+                            <DFigure theme={theme}>
                                 <DImage src='https://static.cloudsafaris.com/public/2b2a7cfd-6c29-49df-954a-ba709fc93c8b_3679500782_3d8ab5750c_b.jpg?action=get&host=true&width=100' alt='' width={36} height={36} />
                             </DFigure>
                             <DPaper>Horombo Hut</DPaper>
                         </DListItems>
 
-                        <DListItems>
-                            <DFigure>
+                        <DListItems theme={theme}>
+                            <DFigure theme={theme}>
                                 <DImage src='https://static.cloudsafaris.com/public/2b2a7cfd-6c29-49df-954a-ba709fc93c8b_3679500782_3d8ab5750c_b.jpg?action=get&host=true&width=100' alt='' width={36} height={36} />
                             </DFigure>
                             <DPaper>Horombo Hut</DPaper>
                         </DListItems>
 
-                        <DListItems>
-                            <DFigure>
+                        <DListItems theme={theme}>
+                            <DFigure theme={theme}>
                                 <DImage src='https://static.cloudsafaris.com/public/2b2a7cfd-6c29-49df-954a-ba709fc93c8b_3679500782_3d8ab5750c_b.jpg?action=get&host=true&width=100' alt='' width={36} height={36} />
                             </DFigure>
                             <DPaper>Horombo Hut</DPaper>
                         </DListItems>
 
-                        <DListItems>
-                            <DFigure>
+                        <DListItems theme={theme}>
+                            <DFigure theme={theme}>
                                 <DImage src='https://static.cloudsafaris.com/public/2b2a7cfd-6c29-49df-954a-ba709fc93c8b_3679500782_3d8ab5750c_b.jpg?action=get&host=true&width=100' alt='' width={36} height={36} />
                             </DFigure>
                             <DPaper>Horombo Hut</DPaper>
                         </DListItems>
 
-                        <DListItems>
-                            <DFigure>
+                        <DListItems theme={theme}>
+                            <DFigure theme={theme}>
                                 <DImage src='https://static.cloudsafaris.com/public/2b2a7cfd-6c29-49df-954a-ba709fc93c8b_3679500782_3d8ab5750c_b.jpg?action=get&host=true&width=100' alt='' width={36} height={36} />
                             </DFigure>
                             <DPaper>Horombo Hut</DPaper>
                         </DListItems>
 
 
-                        <DListItems>
-                            <DFigure>
+                        <DListItems theme={theme}>
+                            <DFigure theme={theme}>
                                 <DImage src='https://static.cloudsafaris.com/public/2b2a7cfd-6c29-49df-954a-ba709fc93c8b_3679500782_3d8ab5750c_b.jpg?action=get&host=true&width=100' alt='' width={36} height={36} />
                             </DFigure>
                             <DPaper>Horombo Hut</DPaper>
                         </DListItems>
                     </DList>
                     <JWrapper>
-                        <JLeft>
-                            <JDot></JDot>
-                            <JBorder></JBorder>
+                        <JLeft theme={theme}>
+                            <JDot theme={theme}></JDot>
+                            <JBorder theme={theme}></JBorder>
 
-                            <JDot></JDot>
-                            <JBorder></JBorder>
+                            <JDot theme={theme}></JDot>
+                            <JBorder theme={theme}></JBorder>
 
-                            <JDot></JDot>
+                            <JDot theme={theme}></JDot>
 
                         </JLeft>
-                        <JRight>
+                        <JRight theme={theme}>
 
-                            <JPaper>Start</JPaper>
-                            <JSrtrong>Kibo Hut</JSrtrong>
+                            <JPaper theme={theme}>Start</JPaper>
+                            <JSrtrong theme={theme}>Kibo Hut</JSrtrong>
 
-                            <JSrtrong style={{ paddingTop: '40px' }}>
+                            <JSrtrong style={{ paddingTop: '40px' }} theme={theme}>
                                 Stella Point
                             </JSrtrong>
 
 
-                            <JSrtrong style={{ paddingTop: '50px' }}>
+                            <JSrtrong style={{ paddingTop: '50px' }} theme={theme}>
                                 Horombo Hut
                             </JSrtrong>
-                            <JPaper>End</JPaper>
+                            <JPaper theme={theme}>End</JPaper>
 
 
                         </JRight>
@@ -151,12 +151,12 @@ export default function BasicTabs() {
             </CustomTabPanel>
 
 
-            <CustomTabPanel value={value} index={1}>
+            <CustomTabPanel value={value} index={1} >
                 Hotels
             </CustomTabPanel>
-            <CustomTabPanel value={value} index={2}>
+            <CustomTabPanel value={value} index={2} >
                 Overview
-            </CustomTabPanel>
+            </CustomTabPanel >
             <CustomTabPanel value={value} index={3}>
                 Meals & Drinks
             </CustomTabPanel>

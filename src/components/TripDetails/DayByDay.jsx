@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, H2, H3, Text, List, ListItems, MapWrapper, IncludedWrapper, ExcludedWrapper, H4, Paper, ListTick, ListExclude } from '../../styles/FindTrip/DayByDay';
-
+import GoogleMapComponent from '../../components/TripDetails/GoogleMapComponent';
 export default function DayByDay({theme}) {
   return (
     <Container theme={theme}>
@@ -21,7 +21,9 @@ export default function DayByDay({theme}) {
         Begin your adventure with a transfer from JRO directly to the Springlands Hotel in Moshi...
       </Text>
 
-      <MapWrapper />
+      <MapWrapper >
+        <GoogleMapComponent/>
+      </MapWrapper>
       
       <IncludedWrapper theme={theme}>
         <H4 theme={theme}>What's included
