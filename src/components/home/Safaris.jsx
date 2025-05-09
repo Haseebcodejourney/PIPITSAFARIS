@@ -20,6 +20,7 @@ import {
 } from "../../styles/home/Safaris";
 import { Button } from "../../styles/common/styles";
 import { Link } from "react-router-dom";
+// import { Button } from "hamzahaseeb-pkg"
 
 function Safaris({ theme }) {
   const [tourData, setTourData] = useState(Data);
@@ -68,6 +69,7 @@ function Safaris({ theme }) {
   return (
     <Container theme={theme}>
       <H2 theme={theme}>Safaris</H2>
+      {/* <Button>dasd</Button> */}
       <BoxWrapper>
         {tourData.length > 0 ? (
           <Slider {...settings}>
